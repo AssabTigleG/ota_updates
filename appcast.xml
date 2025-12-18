@@ -5,9 +5,9 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.1</title>
+      <title>Version 1.0.2</title>
       <!-- The version below MUST match the 'version' in your pubspec.yaml -->
-      <sparkle:version>1.0.1+2</sparkle:version> 
+      <sparkle:version>1.0.2+3</sparkle:version> 
       <description>
         <![CDATA[
         <ul>
@@ -17,7 +17,7 @@
       </description>
       <pubDate>Thu, 18 Dec 2025 18:00:00 +0000</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.0.1+2"
+                 sparkle:version="1.0.2+3"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
@@ -25,4 +25,5 @@
   </channel>
 
 </rss>
+
 
