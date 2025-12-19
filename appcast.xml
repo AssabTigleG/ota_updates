@@ -5,25 +5,26 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.2</title>
+      <title>Version 1.0.3</title>
       <!-- The version below MUST match the 'version' in your pubspec.yaml -->
-      <sparkle:version>1.0.2+3</sparkle:version> 
+      <sparkle:version>1.0.3+4</sparkle:version> 
       <description>
         <![CDATA[
+        <h3>What's New in 1.0.3</h3>
         <ul>
-          <li>Second release of Eduverse.</li>
+          <li><b>New Settings Screen:</b> A central place to manage app preferences.</li>
+          <li><b>Theme Switching:</b> Toggle between Light, Dark, and System themes.</li>
+          <li><b>Silent Updates:</b> The app now updates seamlessly in the background.</li>
+          <li><b>Changelog Support:</b> You can now see what's new before updating.</li>
         </ul>
         ]]>
       </description>
-      <pubDate>Thu, 18 Dec 2025 18:00:00 +0000</pubDate>
+      <pubDate>Fri, 19 Dec 2025 18:45:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.0.2+3"
+                 sparkle:version="1.0.3+4"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
     </item>
   </channel>
-
 </rss>
-
-
