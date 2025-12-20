@@ -5,12 +5,11 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.4</title>
-      <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml (e.g., 1.0.4+1) -->
-      <sparkle:version>1.0.4+5</sparkle:version> 
+      <title>Version 1.0.5</title>
+      <sparkle:version>1.0.5+6</sparkle:version> 
       <description>
         <![CDATA[
-          <h2>✨ What's New in 1.0.4</h2>
+          <h2>✨ What's New in 1.0.5</h2>
           
           <h3>📊 New Analytics Dashboard</h3>
           <ul>
@@ -31,16 +30,36 @@
             <li>Resolved layout consistency issues on large screens.</li>
             <li>Fixed tooltip clipping on charts.</li>
           </ul>
+          
+          <h3>✨ New Update Experience</h3>
+          <ul>
+            <li><b>Redesigned Update Dialog:</b> A cleaner, modern interface for viewing changelogs and downloading updates.</li>
+            <li><b>Better Changelogs:</b> "What's New" notes are now easier to read with proper formatting and spacing.</li>
+          </ul>
+
+          <h3>📊 Analytics Polish</h3>
+          <ul>
+            <li><b>Graph Visibility:</b> Increased the size of the Performance Trend graph for better readability on Desktop.</li>
+            <li><b>Tooltip Fixes:</b> Data points near the top (100%) no longer cut off the tooltips.</li>
+            <li><b>Layout fixes:</b> Summary cards now align perfectly in height and width across all screen sizes.</li>
+          </ul>
+
+          <h3>🛠 Internal</h3>
+          <ul>
+            <li>Refactored card components for better code maintainability.</li>
+            <li>Improved update feed parsing logic.</li>
+          </ul>
         ]]>
       </description>
       <pubDate>Sat, 20 Dec 2025 12:00:00 +0000</pubDate>
       <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/v1.0.4/eduverse_setup.exe"
-                 sparkle:version="1.0.4+5"
+                 sparkle:version="1.0.5+6"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
 </rss>
+
 
