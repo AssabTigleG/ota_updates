@@ -5,63 +5,39 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.6</title>
-      <sparkle:version>1.0.6+7</sparkle:version> 
+      <title>Version 1.0.7</title>
+      <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
+      <sparkle:version>1.0.7+8</sparkle:version> 
       <description>
         <![CDATA[
-          <h2>✨ What's New in 1.0.6</h2>
+          <h2>✨ Visual & Logic Polish in 1.0.7</h2>
           
-          <h3>📊 New Analytics Dashboard</h3>
+          <h3>🛡️ Data Integrity</h3>
           <ul>
-            <li><b>Performance Trend Graph:</b> Visualize teacher progress over time with a new interactive curve chart.</li>
-            <li><b>KPI Summary Cards:</b> Quick view of Current Rating, Total Sessions, and Notebooks Checked.</li>
-            <li><b>Strengths & Weaknesses:</b> Detailed breakdown of criteria scores.</li>
+            <li><b>Strict Validation:</b> Notebook counts are now strictly validated. You cannot check more notebooks than the total class strength defined for a session.</li>
+            <li><b>Class Strength Tracking:</b> Added "Total Expected Notebooks" metric to analytics for better completion rate tracking.</li>
           </ul>
 
-          <h3>🎨 UI & Layout Improvements</h3>
+          <h3>🎨 UI Improvements</h3>
           <ul>
-            <li><b>Responsive Design:</b> Improved split-screen layout for Desktop users.</li>
-            <li><b>Graph Improvements:</b> Graphs now scale effectively and show clear 0-100% boundaries.</li>
-            <li><b>Consistency:</b> Standardized card styling across the dashboard.</li>
+            <li><b>Cleaner Graphs:</b> Optimized chart layout by removing redundant axis labels to maximize data visibility.</li>
+            <li><b>Visual Consistency:</b> Fixed invisible borders on summary cards and standardized styling across History and Analytics.</li>
+            <li><b>Modern Dialogs:</b> Review detail dialogs now use the new dashboard-style summary cards for a unified look.</li>
           </ul>
 
-          <h3>🛠 Fixes</h3>
+          <h3>🏗️ Architecture</h3>
           <ul>
-            <li>Resolved layout consistency issues on large screens.</li>
-            <li>Fixed tooltip clipping on charts.</li>
-          </ul>
-          
-          <h3>✨ New Update Experience</h3>
-          <ul>
-            <li><b>Redesigned Update Dialog:</b> A cleaner, modern interface for viewing changelogs and downloading updates.</li>
-            <li><b>Better Changelogs:</b> "What's New" notes are now easier to read with proper formatting and spacing.</li>
-          </ul>
-
-          <h3>📊 Analytics Polish</h3>
-          <ul>
-            <li><b>Graph Visibility:</b> Increased the size of the Performance Trend graph for better readability on Desktop.</li>
-            <li><b>Tooltip Fixes:</b> Data points near the top (100%) no longer cut off the tooltips.</li>
-            <li><b>Layout fixes:</b> Summary cards now align perfectly in height and width across all screen sizes.</li>
-          </ul>
-
-          <h3>🛠 Internal</h3>
-          <ul>
-            <li>Refactored card components for better code maintainability.</li>
-            <li>Improved update feed parsing logic.</li>
+            <li><b>Refactoring:</b> Major code cleanup to prepare for future modules (Classroom Observation).</li>
+            <li><b>Optimization:</b> Consolidated duplicate widgets into generic, reusable components to reduce app size and complexity.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Sat, 20 Dec 2025 12:00:00 +0000</pubDate>
-      <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
+      <pubDate>Sun, 21 Dec 2025 19:30:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.0.6+7"
+                 sparkle:version="1.0.7+8"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
 </rss>
-
-
-
-
