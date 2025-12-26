@@ -5,36 +5,52 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.7</title>
+      <title>Version 1.0.8</title>
       <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
-      <sparkle:version>1.0.7+8</sparkle:version> 
+      <sparkle:version>1.0.8+9</sparkle:version>
+      <!-- <eduverse:force>true</eduverse:force> -->
       <description>
         <![CDATA[
-          <h2>✨ Visual & Logic Polish in 1.0.7</h2>
+          <h2>📅 Major Update: Academic Periods</h2>
           
-          <h3>🛡️ Data Integrity</h3>
+          <h3>✨ New Features</h3>
           <ul>
-            <li><b>Strict Validation:</b> Notebook counts are now strictly validated. You cannot check more notebooks than the total class strength defined for a session.</li>
-            <li><b>Class Strength Tracking:</b> Added "Total Expected Notebooks" metric to analytics for better completion rate tracking.</li>
+            <li><b>Academic Schedule System:</b> You can now configure School Years, Semesters, and Rounds in <i>Settings > Configuration</i>.</li>
+            <li><b>Global Time Filtering:</b> Added a new scope selector (Calendar Icon). Switch your entire app view between "All Time", specific Semesters, or individual Rounds to filter History and Analytics data instantly.</li>
           </ul>
 
-          <h3>🎨 UI Improvements</h3>
+          <h3>🛡️ Logic & Validation</h3>
           <ul>
-            <li><b>Cleaner Graphs:</b> Optimized chart layout by removing redundant axis labels to maximize data visibility.</li>
-            <li><b>Visual Consistency:</b> Fixed invisible borders on summary cards and standardized styling across History and Analytics.</li>
-            <li><b>Modern Dialogs:</b> Review detail dialogs now use the new dashboard-style summary cards for a unified look.</li>
+            <li><b>Smart Date Pickers:</b> When configuring schedules, date pickers are now strictly constrained. A Semester cannot be set outside its Year, and a Round cannot be set outside its Semester.</li>
+            <li><b>Auto-Refresh:</b> Lists and configurations now update immediately upon saving, removing the need to navigate back and forth.</li>
+            <li><b>Strict Hierarchy:</b> Added robust validation to prevent overlapping dates between Semesters and Rounds.</li>
+            <li><b>Auto-Sync:</b> The app now automatically detects and applies the active academic year immediately after configuration.</li>
+            <li><b>Crash Fixes:</b> Resolved list immutability errors when adding rounds to new semesters.</li>
           </ul>
 
-          <h3>🏗️ Architecture</h3>
+          <h3>📊 Analytics</h3>
           <ul>
-            <li><b>Refactoring:</b> Major code cleanup to prepare for future modules (Classroom Observation).</li>
-            <li><b>Optimization:</b> Consolidated duplicate widgets into generic, reusable components to reduce app size and complexity.</li>
+            <li><b>Scoped Data:</b> The Analytics Dashboard now respects the selected Academic Period, allowing you to see teacher performance for a specific term or round.</li>
+          </ul>
+
+          <h3>🔍 UX Improvements</h3>
+          <ul>
+            <li><b>Scope Selector:</b> Improved the "Select Academic Period" dialog with a visual tree structure and "Active Now" indicators.</li>
+            <li><b>Safety:</b> Added confirmation dialogs when deleting Semesters to prevent accidental data loss.</li>
+          </ul>
+
+          <h3>✨ Academic Schedule Redesign</h3>
+          <ul>
+            <li><b>Timeline Dashboard:</b> Completely revamped the schedule view into a card-based visual timeline.</li>
+            <li><b>Smart Editor:</b> New "Master-Detail" editor with visual connectors for Semesters and Rounds.</li>
+            <li><b>Pill UI:</b> Date pickers and status indicators now use a modern, touch-friendly "Pill" design.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Sun, 21 Dec 2025 19:30:00 +0500</pubDate>
+      <pubDate>Thu, 25 Dec 2025 11:45:00 +0500</pubDate>
+      <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.0.7+8"
+                 sparkle:version="1.0.8+9"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
