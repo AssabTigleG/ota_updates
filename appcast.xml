@@ -5,57 +5,36 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.8</title>
+      <title>Version 1.0.9</title>
       <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
-      <sparkle:version>1.0.8+9</sparkle:version>
-      <eduverse:force>true</eduverse:force><!-- <eduverse:force>true</eduverse:force> -->
+      <sparkle:version>1.0.9+10</sparkle:version>
+      <!-- <eduverse:force>true</eduverse:force> -->
       <description>
         <![CDATA[
-          <h2>📅 Major Update: Academic Periods</h2>
+          <h2>📅 Major Update: Multi Score Standards & Averages</h2>
           
           <h3>✨ New Features</h3>
           <ul>
-            <li><b>Academic Schedule System:</b> You can now configure School Years, Semesters, and Rounds in <i>Settings > Configuration</i>.</li>
-            <li><b>Global Time Filtering:</b> Added a new scope selector (Calendar Icon). Switch your entire app view between "All Time", specific Semesters, or individual Rounds to filter History and Analytics data instantly.</li>
-          </ul>
-
-          <h3>🛡️ Logic & Validation</h3>
-          <ul>
-            <li><b>Smart Date Pickers:</b> When configuring schedules, date pickers are now strictly constrained. A Semester cannot be set outside its Year, and a Round cannot be set outside its Semester.</li>
-            <li><b>Auto-Refresh:</b> Lists and configurations now update immediately upon saving, removing the need to navigate back and forth.</li>
-            <li><b>Strict Hierarchy:</b> Added robust validation to prevent overlapping dates between Semesters and Rounds.</li>
-            <li><b>Auto-Sync:</b> The app now automatically detects and applies the active academic year immediately after configuration.</li>
-            <li><b>Crash Fixes:</b> Resolved list immutability errors when adding rounds to new semesters.</li>
-          </ul>
-
-          <h3>📊 Analytics</h3>
-          <ul>
-            <li><b>Scoped Data:</b> The Analytics Dashboard now respects the selected Academic Period, allowing you to see teacher performance for a specific term or round.</li>
+            <li><b>Multi Score Standards: You can now configure multiple score standards with Titles, Color and Values.</li>
+            <li><b>Average: Added a average card, to show the average of the overall reviews.</li>
+            <li><b>Score to Average: The value of Average will reflect the title of Multi Score Standard.</li>
           </ul>
 
           <h3>🔍 UX Improvements</h3>
           <ul>
-            <li><b>Scope Selector:</b> Improved the "Select Academic Period" dialog with a visual tree structure and "Active Now" indicators.</li>
-            <li><b>Safety:</b> Added confirmation dialogs when deleting Semesters to prevent accidental data loss.</li>
+            <li><b>Mobile View: Improve the Mobile view of many sections in the app.</li>
+            <li><b>Multi Score: Rewired the UI of the Multi Score (5th Time) and Implemented a specific UI for mobile view.</li>
           </ul>
 
-          <h3>✨ Academic Schedule Redesign</h3>
-          <ul>
-            <li><b>Timeline Dashboard:</b> Completely revamped the schedule view into a card-based visual timeline.</li>
-            <li><b>Smart Editor:</b> New "Master-Detail" editor with visual connectors for Semesters and Rounds.</li>
-            <li><b>Pill UI:</b> Date pickers and status indicators now use a modern, touch-friendly "Pill" design.</li>
-          </ul>
         ]]>
       </description>
-      <pubDate>Thu, 25 Dec 2025 11:45:00 +0500</pubDate>
+      <pubDate>Thu, 02 Jan 2026 11:45:00 +0500</pubDate>
       <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.0.8+9"
+                 sparkle:version="1.0.9+10"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
 </rss>
-
-
