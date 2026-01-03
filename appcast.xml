@@ -8,7 +8,7 @@
       <title>Version 1.0.9</title>
       <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
       <sparkle:version>1.0.9+10</sparkle:version>
-      <eduverse:force>false</eduverse:force>
+      <eduverse:force>true</eduverse:force>
       <description>
         <![CDATA[
           <h2>📅 Major Update: Multi Score Standards & Averages</h2>
@@ -38,6 +38,7 @@
     </item>
   </channel>
 </rss>
+
 
 
 
