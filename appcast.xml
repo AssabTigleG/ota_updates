@@ -5,46 +5,50 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.9</title>
+      <title>Version 1.2.0</title>
       <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
-      <sparkle:version>1.0.9+10</sparkle:version>
-      <eduverse:force>true</eduverse:force>
+      <sparkle:version>1.2.0+12</sparkle:version>
+      <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>📅 Major Update: Multi Score Standards & Averages</h2>
+          <h2>🚀 Major Update: The Campus Hub</h2>
           
-          <h3>✨ New Features</h3>
+          <h3>🏫 School Management</h3>
           <ul>
-            <li><b>Multi Score Standards: You can now configure multiple score standards with Titles, Color and Values.</li>
-            <li><b>Average: Added a average card, to show the average of the overall reviews.</li>
-            <li><b>Score to Average: The value of Average will reflect the title of Multi Score Standard.</li>
+            <li><strong>School Structure:</strong> New Kanban-style board to manage Sections and Classes.</li>
+            <li><strong>Subjects Module:</strong> Manage curriculum subjects with color coding.</li>
+            <li><strong>Workload Management:</strong> Assign specific Classes and Subjects to Teachers.</li>
+            <li><strong>Curriculum Mapping:</strong> Define which subjects are taught in which classes.</li>
           </ul>
 
-          <h3>🔍 UX Improvements</h3>
+          <h3>🧠 Smart Reviews</h3>
           <ul>
-            <li><b>Mobile View: Improve the Mobile view of many sections in the app.</li>
-            <li><b>Multi Score: Rewired the UI of the Multi Score (5th Time) and Implemented a specific UI for mobile view.</li>
+            <li><strong>Context-Aware Forms:</strong> Data entry dropdowns are now intelligent.</li>
+            <li><strong>Teacher Filter:</strong> Selecting a teacher shows only their assigned classes.</li>
+            <li><strong>Class Filter:</strong> Selecting a class shows only the subjects in its curriculum.</li>
           </ul>
 
+          <h3>📊 Analytics 2.0</h3>
+          <ul>
+            <li><strong>Deep Insights:</strong> You can now filter Teacher Statistics by <strong>Subject</strong> and <strong>Grade</strong>.</li>
+            <li><strong>New Filter UI:</strong> Added a comprehensive filter sheet to the Analytics Dashboard.</li>
+          </ul>
+
+          <h3>✨ UI/UX Improvements</h3>
+          <ul>
+            <li><strong>Desktop Sidebar:</strong> New expandable navigation with hover effects.</li>
+            <li><strong>Slide-Over Editors:</strong> Replaced dialogs with modern Side Sheets for editing Teachers and Classes.</li>
+            <li><strong>Visual Polish:</strong> Standardized card styling, better scrolling, and cleaner typography.</li>
+          </ul>
         ]]>
       </description>
-      <pubDate>Thu, 02 Jan 2026 11:45:00 +0500</pubDate>
+      <pubDate>Sun, 11 Jan 2026 21:35:00 +0500</pubDate>
       <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.0.9+10"
+                 sparkle:version="1.2.0+12"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
 </rss>
-
-
-
-
-
-
-
-
-
-
