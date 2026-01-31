@@ -5,42 +5,23 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.2.2</title>
+      <title>Version 1.2.3</title>
       <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
-      <sparkle:version>1.2.2+13</sparkle:version>
+      <sparkle:version>1.2.3+14</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>🛠️ Architecture & Stability Overhaul</h2>
-          
-          <h3>✨ Polished User Experience</h3>
-          <ul>
-            <li><strong>Safe Actions:</strong> Implemented a global "Safe Execution" wrapper. Delete and Save operations now handle errors gracefully with consistent user feedback.</li>
-            <li><strong>Responsive Forms:</strong> All management editors (Teachers, Subjects, Standards, Structure) now use a unified <code>FormSheet</code> component with automatic loading states and validation.</li>
-            <li><strong>Visual Consistency:</strong> Standardized "Safe Delete" logic across Drafts, History, and Management screens.</li>
-          </ul>
-
-          <h3>🏫 Campus Management</h3>
-          <ul>
-            <li><strong>Capacity Planning:</strong> School Structure sections now display the <strong>Total Student Strength</strong> (sum of all classes) in the header.</li>
-            <li><strong>Unified Editors:</strong> Refactored Teacher, Subject, and Academic Year editors for a smoother, crash-free experience.</li>
-          </ul>
-
-          <h3>⚙️ Under the Hood</h3>
-          <ul>
-            <li><strong>Hooks Migration:</strong> Massive reduction in boilerplate code (approx. 40% less in forms) by migrating stateful widgets to <code>flutter_hooks</code>.</li>
-            <li><strong>Database Integrity:</strong> Complete refactor of data relationships to use native <code>IsarLinks</code>, ensuring better referential integrity between Teachers, Classes, and Subjects.</li>
-            <li><strong>Performance:</strong> Optimized form controllers and eliminated manual lifecycle management for text inputs and timers.</li>
-          </ul>
+          <h2>🛠️ Curriculum Planner and Academic Plan</h2>
         ]]>
       </description>
-      <pubDate>Sun, 18 Jan 2026 21:35:00 +0500</pubDate>
+      <pubDate>Sun, 1 Feb 2026 21:35:00 +0500</pubDate>
       <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.2.2+13"
+                 sparkle:version="1.2.3+14"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
 </rss>
+
