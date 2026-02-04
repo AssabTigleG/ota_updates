@@ -5,23 +5,48 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.2.3</title>
+      <title>Version 1.4.0</title>
       <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
-      <sparkle:version>1.2.3+14</sparkle:version>
+      <sparkle:version>1.4.0+16</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>🛠️ Curriculum Planner and Academic Plan</h2>
+          <h2>� History Center & Reports</h2>
+          
+          <h3>🚚 Delivery History Revamp</h3>
+          <ul>
+            <li><strong>New Detail View:</strong> Completely redesigned the Delivery History Detail screen. It now features a clean, summary-first layout that highlights key metrics like Average Completion and Review Count upfront.</li>
+            <li><strong>Styled Cards:</strong> Weekly reviews are now presented as expandable cards with clear visual indicators for Week Number, Date, and Completion Score.</li>
+            <li><strong>Search:</strong> You can now search for delivery reviews by Class, Subject, or Teacher name directly from the history list.</li>
+          </ul>
+
+          <h3>📋 Consolidated Remarks</h3>
+          <ul>
+            <li><strong>Dedicated Report View:</strong> View all remarks for a subject in one place with the new "Consolidated Remarks" sheet.</li>
+            <li><strong>Copy to Clipboard:</strong> Added ability to copy the <strong>Full Report</strong> (all remarks formatted for WhatsApp/Email) or <strong>Single Remarks</strong> with just one click.</li>
+            <li><strong>Responsive Experience:</strong> Opens as a centered Dialog on Desktop and a Bottom Sheet on Mobile for the best experience on any device.</li>
+          </ul>
+
+          <h3>�️ Desktop Enhancements</h3>
+          <ul>
+            <li><strong>Dialogs vs Sheets:</strong> Optimized interactions to use modal dialogs on larger screens, reducing mouse travel and improving focus.</li>
+            <li><strong>Grid Layout:</strong> History cards now adapt beautifully to grid layouts on wide screens.</li>
+          </ul>
+
+          <h3>✨ General improvements</h3>
+          <ul>
+            <li>Fixed layout issues in history cards.</li>
+            <li>Improved scrolling performance in long history lists.</li>
+          </ul>
         ]]>
       </description>
-      <pubDate>Sun, 1 Feb 2026 21:35:00 +0500</pubDate>
+      <pubDate>Thu, 05 Feb 2026 02:00:00 +0500</pubDate>
       <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.2.3+14"
+                 sparkle:version="1.4.0+16"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
 </rss>
-
