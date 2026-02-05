@@ -5,9 +5,9 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.4.0</title>
+      <title>Version 1.4.1</title>
       <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
-      <sparkle:version>1.4.0+16</sparkle:version>
+      <sparkle:version>1.4.1+17</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
@@ -43,7 +43,7 @@
       <pubDate>Thu, 05 Feb 2026 02:00:00 +0500</pubDate>
       <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.4.0+16"
+                 sparkle:version="1.4.1+17"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
