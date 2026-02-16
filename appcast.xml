@@ -5,49 +5,41 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.4.2</title>
-      <!-- UPDATE THIS VERSION TO MATCH YOUR pubspec.yaml -->
-      <sparkle:version>1.4.2+18</sparkle:version>
+      <title>Version 1.4.5</title>
+      <sparkle:version>1.4.5+19</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>� History Center & Reports</h2>
+          <h2>🚀 What's New</h2>
           
-          <h3>🚚 Delivery History Revamp</h3>
+          <h3>� Academic Analytics</h3>
           <ul>
-            <li><strong>New Detail View:</strong> Completely redesigned the Delivery History Detail screen. It now features a clean, summary-first layout that highlights key metrics like Average Completion and Review Count upfront.</li>
-            <li><strong>Styled Cards:</strong> Weekly reviews are now presented as expandable cards with clear visual indicators for Week Number, Date, and Completion Score.</li>
-            <li><strong>Search:</strong> You can now search for delivery reviews by Class, Subject, or Teacher name directly from the history list.</li>
+            <li><strong>Linked Standards:</strong> "Syllabus Coverage" now dynamically links to Academic Performance Standards, showing color-coded status (e.g., On Track, At Risk).</li>
           </ul>
 
-          <h3>📋 Consolidated Remarks</h3>
+          <h3>🗂️ Standards Organization</h3>
           <ul>
-            <li><strong>Dedicated Report View:</strong> View all remarks for a subject in one place with the new "Consolidated Remarks" sheet.</li>
-            <li><strong>Copy to Clipboard:</strong> Added ability to copy the <strong>Full Report</strong> (all remarks formatted for WhatsApp/Email) or <strong>Single Remarks</strong> with just one click.</li>
-            <li><strong>Responsive Experience:</strong> Opens as a centered Dialog on Desktop and a Bottom Sheet on Mobile for the best experience on any device.</li>
+            <li><strong>Sidebar Layout:</strong> Refactored the "Standards" screen with a new sidebar navigation to easily switch between "Notebook Review" and "Academic Analytics" contexts.</li>
           </ul>
 
-          <h3>�️ Desktop Enhancements</h3>
+          <h3>� Subject Management</h3>
           <ul>
-            <li><strong>Dialogs vs Sheets:</strong> Optimized interactions to use modal dialogs on larger screens, reducing mouse travel and improving focus.</li>
-            <li><strong>Grid Layout:</strong> History cards now adapt beautifully to grid layouts on wide screens.</li>
+            <li><strong>Enhanced Cards:</strong> Subject cards are now wider and display the <strong>Publisher</strong> information prominently.</li>
+            <li><strong>Publisher Field:</strong> Added publisher details to the subject editor.</li>
           </ul>
 
-          <h3>✨ General improvements</h3>
+          <h3>🔒 Security & Stability</h3>
           <ul>
-            <li>Fixed layout issues in history cards.</li>
-            <li>Improved scrolling performance in long history lists.</li>
+            <li><strong>Offline Verification:</strong> Improved the 30-day security check. The app now attempts to silently verify your session if the timer expires, preventing unnecessary blocking if you have an active internet connection.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Thu, 05 Feb 2026 02:00:00 +0500</pubDate>
-      <!-- UPDATE THE URL AND LENGTH AFTER BUILDING YOUR INSTALLER -->
+      <pubDate>Tue, 17 Feb 2026 01:40:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.4.2+18"
+                 sparkle:version="1.4.5+19"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
 </rss>
-
