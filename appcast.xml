@@ -5,38 +5,49 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.4.5</title>
-      <sparkle:version>1.4.5+19</sparkle:version>
+      <title>Version 1.5.0</title>
+      <sparkle:version>1.5.0+20</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>🚀 What's New</h2>
+          <h2>🚀 What's New in 1.5.0</h2>
           
-          <h3>� Academic Analytics</h3>
+          <h3>📅 Academic & Weekly Planning</h3>
           <ul>
-            <li><strong>Linked Standards:</strong> "Syllabus Coverage" now dynamically links to Academic Performance Standards, showing color-coded status (e.g., On Track, At Risk).</li>
+            <li><strong>Real-time Coverage:</strong> Weekly planning coverage now updates instantly as you add, remove, or review topics, displaying exact "out of" counts for Topics and SLOs.</li>
+            <li><strong>Global Uniqueness Checks:</strong> The system now automatically prevents assigning the same syllabus topic across different weeks in the same academic year.</li>
+            <li><strong>Syllabus Insights:</strong> The Syllabus dashboard now calculates and prominently displays the "Total Pages" for the configured subject.</li>
+            <li><strong>Quick Add Shortcuts:</strong> Clicking directly on a Chapter or Topic node now instantly opens the creation sheet for its child elements.</li>
+            <li><strong>Enhanced Reporting:</strong> Delivery review reports now include a "Missed Topics" section, providing a clearer picture of curriculum gaps.</li>
           </ul>
 
-          <h3>🗂️ Standards Organization</h3>
+          <h3>📊 Reporting & History</h3>
           <ul>
-            <li><strong>Sidebar Layout:</strong> Refactored the "Standards" screen with a new sidebar navigation to easily switch between "Notebook Review" and "Academic Analytics" contexts.</li>
+            <li><strong>Missed Topics Details:</strong> Delivery review text reports (clipboard exports) now explicitly list "Missed Topics" along with the teacher's provided reasons.</li>
           </ul>
 
-          <h3>� Subject Management</h3>
+          <h3>✨ UI / UX Enhancements</h3>
           <ul>
-            <li><strong>Enhanced Cards:</strong> Subject cards are now wider and display the <strong>Publisher</strong> information prominently.</li>
-            <li><strong>Publisher Field:</strong> Added publisher details to the subject editor.</li>
+            <li><strong>Enhanced Tree Views:</strong> Added "Table of Contents" dotted leader lines and interactive row-hover highlighting to make reading complex syllabi and hierarchies much easier.</li>
+            <li><strong>Searchable Dropdowns:</strong> Class and Subject selection menus now support deep filtering, making large datasets easier to navigate.</li>
+            <li><strong>Polished Dialogs:</strong> Upgraded the Academic Period selector with improved spacing, far-right active status badges, and cleaner selection indicators.</li>
+            <li><strong>Reliable Feedback:</strong> Fixed an issue where system Snackbars (success/error messages) were occasionally hidden behind pop-up editor sheets.</li>
+            <li><strong>Syllabus Overhaul:</strong> The syllabus screen has been redesigned with a "table of contents" style, using leader lines and hover highlighting to make it easier to connect topics to their page numbers.</li>
+            <li><strong>Faster Workflow:</strong> You can now click directly on a Chapter or Topic in the syllabus to quickly open the "Add" sheet for the next level down.</li>
           </ul>
 
-          <h3>🔒 Security & Stability</h3>
+          <h3>🛠️ Bug Fixes & Performance</h3>
           <ul>
-            <li><strong>Offline Verification:</strong> Improved the 30-day security check. The app now attempts to silently verify your session if the timer expires, preventing unnecessary blocking if you have an active internet connection.</li>
+            <li>Fixed an issue where deleting an item from the weekly plan did not update the UI until the screen was reloaded.</li>
+            <li>Resolved a bug where feedback messages (snackbars) could appear behind editor sheets.</li>
+            <li>Optimized database queries for analytics to be more efficient and reactive.</li>
           </ul>
+          
         ]]>
       </description>
-      <pubDate>Tue, 17 Feb 2026 01:40:00 +0500</pubDate>
+      <pubDate>Fri, 27 Feb 2026 19:39:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.4.5+19"
+                 sparkle:version="1.5.0+20"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
