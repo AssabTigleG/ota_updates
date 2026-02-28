@@ -5,49 +5,53 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.5.0</title>
-      <sparkle:version>1.5.0+20</sparkle:version>
+      <title>Version 1.5.2</title>
+      <sparkle:version>1.5.2+21</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>🚀 What's New in 1.5.0</h2>
+          <h2>🚀 What's New in 1.5.2</h2>
           
-          <h3>📅 Academic & Weekly Planning</h3>
+          <h3>📅 Academic Planning & Syllabus</h3>
           <ul>
-            <li><strong>Real-time Coverage:</strong> Weekly planning coverage now updates instantly as you add, remove, or review topics, displaying exact "out of" counts for Topics and SLOs.</li>
-            <li><strong>Global Uniqueness Checks:</strong> The system now automatically prevents assigning the same syllabus topic across different weeks in the same academic year.</li>
-            <li><strong>Syllabus Insights:</strong> The Syllabus dashboard now calculates and prominently displays the "Total Pages" for the configured subject.</li>
-            <li><strong>Quick Add Shortcuts:</strong> Clicking directly on a Chapter or Topic node now instantly opens the creation sheet for its child elements.</li>
-            <li><strong>Enhanced Reporting:</strong> Delivery review reports now include a "Missed Topics" section, providing a clearer picture of curriculum gaps.</li>
+            <li><strong>Syllabus Visual Guide:</strong> Added "Table of Contents" dotted leaders and interactive row-hover highlighting to make reading complex curriculum hierarchies effortless.</li>
+            <li><strong>Intelligent Planning:</strong> Integrated real-time "Planning vs. Syllabus" coverage cards with exact "out of" counts for Topics and SLOs.</li>
+            <li><strong>Global Logic:</strong> The system now enforces year-wide uniqueness, preventing the same topic from being planned twice across different weeks.</li>
+            <li><strong>Total Pages:</strong> Automatic calculation and display of total subject pages based on chapter configurations.</li>
           </ul>
 
-          <h3>📊 Reporting & History</h3>
+          <h3>👨‍🏫 Teacher & Workload Management</h3>
           <ul>
-            <li><strong>Missed Topics Details:</strong> Delivery review text reports (clipboard exports) now explicitly list "Missed Topics" along with the teacher's provided reasons.</li>
+            <li><strong>Redesigned Workload UI:</strong> Teacher assignments are now elegantly grouped by Classroom using the new <code>TigleGroupedCard</code> molecule.</li>
+            <li><strong>Analytics Refinement:</strong> Replaced "Strength" with "Workload" (cumulative student count) while maintaining "Unique Reach" visibility in stat summaries.</li>
+            <li><strong>Smart Constraints:</strong> Added validation to prevent logically conflicting assignments (e.g., assigning "General/All" alongside specific subjects).</li>
           </ul>
 
-          <h3>✨ UI / UX Enhancements</h3>
+          <h3>📊 Data Integrity & Reporting</h3>
           <ul>
-            <li><strong>Enhanced Tree Views:</strong> Added "Table of Contents" dotted leader lines and interactive row-hover highlighting to make reading complex syllabi and hierarchies much easier.</li>
-            <li><strong>Searchable Dropdowns:</strong> Class and Subject selection menus now support deep filtering, making large datasets easier to navigate.</li>
-            <li><strong>Polished Dialogs:</strong> Upgraded the Academic Period selector with improved spacing, far-right active status badges, and cleaner selection indicators.</li>
-            <li><strong>Reliable Feedback:</strong> Fixed an issue where system Snackbars (success/error messages) were occasionally hidden behind pop-up editor sheets.</li>
-            <li><strong>Syllabus Overhaul:</strong> The syllabus screen has been redesigned with a "table of contents" style, using leader lines and hover highlighting to make it easier to connect topics to their page numbers.</li>
-            <li><strong>Faster Workflow:</strong> You can now click directly on a Chapter or Topic in the syllabus to quickly open the "Add" sheet for the next level down.</li>
+            <li><strong>Clean Sweep Deletion:</strong> Deleting a Classroom now performs a full cascading purge of all associated Syllabus data, Weekly Plans, and History to prevent orphaned records.</li>
+            <li><strong>Enhanced Audit Trails:</strong> Delivery review reports now explicitly list "Missed Topics" and their associated reasons in text exports.</li>
           </ul>
 
-          <h3>🛠️ Bug Fixes & Performance</h3>
+          <h3>✨ UI / UX & Design System</h3>
           <ul>
-            <li>Fixed an issue where deleting an item from the weekly plan did not update the UI until the screen was reloaded.</li>
-            <li>Resolved a bug where feedback messages (snackbars) could appear behind editor sheets.</li>
-            <li>Optimized database queries for analytics to be more efficient and reactive.</li>
+            <li><strong>High-Alert Redesign:</strong> Fully overhauled destructive dialogs with a modern "Alert Container" style, centered typography, and high-contrast block actions.</li>
+            <li><strong>Desktop Optimization:</strong> Standardized dialog widths and fixed "stretched" layouts on large monitors.</li>
+            <li><strong>TigleKit Expansion:</strong> Migrated multiple application patterns into standard UI Kit molecules: <code>TigleGroupedCard</code>, <code>TigleProgressCard</code>, and <code>TigleHierarchyPicker</code>.</li>
           </ul>
-          
+
+          <h3>🛠️ Bug Fixes</h3>
+          <ul>
+            <li>Fixed a layout crash in Stat Cards when used within scrollable horizontal rows.</li>
+            <li>Fixed hover highlights missing on sub-topics due to hit-test transparency.</li>
+            <li>Resolved an issue where Snackbars appeared behind modal editor sheets.</li>
+            <li>Fixed "Null check operator" crashes when viewing empty history detail headers.</li>
+          </ul>
         ]]>
       </description>
-      <pubDate>Fri, 27 Feb 2026 19:39:00 +0500</pubDate>
+      <pubDate>Sun, 01 Mar 2026 04:25:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.5.0+20"
+                 sparkle:version="1.5.2+21"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
