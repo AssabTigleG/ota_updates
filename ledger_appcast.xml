@@ -19,11 +19,12 @@
         ]]>
       </description>
       <pubDate>Sun, 01 Mar 2026 04:25:00 +0500</pubDate>
-      <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/tigle_ledger_setup.exe"
+      <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleLedger/tigle_ledger_setup.exe"
                  sparkle:version="1.0.0+1"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
+
 </rss>
