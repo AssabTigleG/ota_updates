@@ -7,7 +7,7 @@
     <item>
       <title>Version 1.0.3</title>
       <sparkle:version>1.0.3+3</sparkle:version>
-      <eduverse:force>false</eduverse:force>
+      <eduverse:force>true</eduverse:force>
       <description>
         <![CDATA[
           <h2>🚀 What's New in 1.0.0</h2>
