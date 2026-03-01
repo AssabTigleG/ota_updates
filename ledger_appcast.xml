@@ -7,7 +7,7 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.2</title>
+      <title>Version 1.0.1</title>
       <sparkle:version>1.0.1+2</sparkle:version>
       <eduverse:force>true</eduverse:force>
       <description>
