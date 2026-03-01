@@ -5,8 +5,8 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.0</title>
-      <sparkle:version>1.0.0+1</sparkle:version>
+      <title>Version 1.0.3</title>
+      <sparkle:version>1.0.3+3</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
@@ -20,7 +20,7 @@
       </description>
       <pubDate>Sun, 01 Mar 2026 04:25:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleLedger/tigle_ledger_setup.exe"
-                 sparkle:version="1.0.0+1"
+                 sparkle:version="1.0.0+3"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
