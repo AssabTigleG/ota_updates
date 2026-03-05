@@ -7,26 +7,26 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.1</title>
-      <sparkle:version>1.0.1+2</sparkle:version>
-      <eduverse:force>true</eduverse:force>
+      <title>Version 1.0.2</title>
+      <sparkle:version>1.0.2+3</sparkle:version>
+      <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>🚀 What's New in 1.0.1</h2>
+          <h2>🚀 What's New in 1.0.2</h2>
           
           <h3>📅 Production Release</h3>
           <ul>
             <li>WE HAVE RELEASED THE APP.</li>
+            <li>Yeah its beautiful :laughing_emoji.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Sun, 01 Mar 2026 04:25:00 +0500</pubDate>
+      <pubDate>Sun, 03 Mar 2026 04:25:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleLedger/tigle_ledger_setup.exe"
-                 sparkle:version="1.0.1+2"
+                 sparkle:version="1.0.2+3"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
     </item>
   </channel>
-
 </rss>
