@@ -5,53 +5,37 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.5.2</title>
-      <sparkle:version>1.5.2+21</sparkle:version>
+      <title>Version 1.5.5</title>
+      <sparkle:version>1.5.5+22</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>🚀 What's New in 1.5.2</h2>
+          <h2>🚀 What's New in 1.5.5</h2>
           
-          <h3>📅 Academic Planning & Syllabus</h3>
+          <h3>📚 Book Tracking & Coverage Analytics</h3>
           <ul>
-            <li><strong>Syllabus Visual Guide:</strong> Added "Table of Contents" dotted leaders and interactive row-hover highlighting to make reading complex curriculum hierarchies effortless.</li>
-            <li><strong>Intelligent Planning:</strong> Integrated real-time "Planning vs. Syllabus" coverage cards with exact "out of" counts for Topics and SLOs.</li>
-            <li><strong>Global Logic:</strong> The system now enforces year-wide uniqueness, preventing the same topic from being planned twice across different weeks.</li>
-            <li><strong>Total Pages:</strong> Automatic calculation and display of total subject pages based on chapter configurations.</li>
+            <li><strong>Physical Book Management:</strong> You can now define the total page count for a Subject. This acts as the "Source of Truth" for your physical curriculum.</li>
+            <li><strong>Coverage Gap Analysis:</strong> Added a new "Book Coverage" dashboard card. It calculates the exact percentage of the book mapped to your syllabus and shows precisely how many pages are "left" or "overflowing."</li>
+            <li><strong>Visual Progress:</strong> Integrated a linear progress bar into the coverage card for an immediate visual sense of curriculum completion.</li>
           </ul>
 
-          <h3>👨‍🏫 Teacher & Workload Management</h3>
+          <h3>✍️ Enhanced Editors & Validation</h3>
           <ul>
-            <li><strong>Redesigned Workload UI:</strong> Teacher assignments are now elegantly grouped by Classroom using the new <code>TigleGroupedCard</code> molecule.</li>
-            <li><strong>Analytics Refinement:</strong> Replaced "Strength" with "Workload" (cumulative student count) while maintaining "Unique Reach" visibility in stat summaries.</li>
-            <li><strong>Smart Constraints:</strong> Added validation to prevent logically conflicting assignments (e.g., assigning "General/All" alongside specific subjects).</li>
+            <li><strong>Intelligent Page Warnings:</strong> The Chapter Editor now cross-references your subject's total pages. If you attempt to add a chapter range that exceeds the book's capacity, the system triggers a confirmation warning.</li>
+            <li><strong>Subject Metadata:</strong> Redesigned Subject cards in the management screen to elegantly display both the Publisher and Page Count using modern dual-label tags.</li>
           </ul>
 
-          <h3>📊 Data Integrity & Reporting</h3>
+          <h3>🛠️ Bug Fixes & Stability</h3>
           <ul>
-            <li><strong>Clean Sweep Deletion:</strong> Deleting a Classroom now performs a full cascading purge of all associated Syllabus data, Weekly Plans, and History to prevent orphaned records.</li>
-            <li><strong>Enhanced Audit Trails:</strong> Delivery review reports now explicitly list "Missed Topics" and their associated reasons in text exports.</li>
-          </ul>
-
-          <h3>✨ UI / UX & Design System</h3>
-          <ul>
-            <li><strong>High-Alert Redesign:</strong> Fully overhauled destructive dialogs with a modern "Alert Container" style, centered typography, and high-contrast block actions.</li>
-            <li><strong>Desktop Optimization:</strong> Standardized dialog widths and fixed "stretched" layouts on large monitors.</li>
-            <li><strong>TigleKit Expansion:</strong> Migrated multiple application patterns into standard UI Kit molecules: <code>TigleGroupedCard</code>, <code>TigleProgressCard</code>, and <code>TigleHierarchyPicker</code>.</li>
-          </ul>
-
-          <h3>🛠️ Bug Fixes</h3>
-          <ul>
-            <li>Fixed a layout crash in Stat Cards when used within scrollable horizontal rows.</li>
-            <li>Fixed hover highlights missing on sub-topics due to hit-test transparency.</li>
-            <li>Resolved an issue where Snackbars appeared behind modal editor sheets.</li>
-            <li>Fixed "Null check operator" crashes when viewing empty history detail headers.</li>
+            <li><strong>Layout Engine Fix:</strong> Resolved a critical "RenderBox was not laid out" crash in the Syllabus Stats grid affecting both Mobile and Desktop views.</li>
+            <li><strong>UI Kit Synchronization:</strong> Fixed a parameter mismatch in <code>TigleDualLabelTag</code> and updated <code>TigleStatCard</code> to better handle dynamic rich-text metrics.</li>
+            <li>Resolved an issue where page range alignments caused <code>hasSize</code> assertion failures during layout rebuilds.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Sun, 01 Mar 2026 04:25:00 +0500</pubDate>
+      <pubDate>Sun, 08 Mar 2026 00:30:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.5.2+21"
+                 sparkle:version="1.5.5+22"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
