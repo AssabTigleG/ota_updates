@@ -5,37 +5,51 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.5.5</title>
-      <sparkle:version>1.5.5+22</sparkle:version>
+      <title>Version 1.5.8</title>
+      <sparkle:version>1.5.8+23</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>🚀 What's New in 1.5.5</h2>
-          
-          <h3>📚 Book Tracking & Coverage Analytics</h3>
+          <h2>What's New in 1.5.8</h2>
+
+          <h3>Subject Model & Classroom Metadata</h3>
           <ul>
-            <li><strong>Physical Book Management:</strong> You can now define the total page count for a Subject. This acts as the "Source of Truth" for your physical curriculum.</li>
-            <li><strong>Coverage Gap Analysis:</strong> Added a new "Book Coverage" dashboard card. It calculates the exact percentage of the book mapped to your syllabus and shows precisely how many pages are "left" or "overflowing."</li>
-            <li><strong>Visual Progress:</strong> Integrated a linear progress bar into the coverage card for an immediate visual sense of curriculum completion.</li>
+            <li><strong>Per-Classroom Book Metadata:</strong> Refactored Subject models to define dynamic Book metadata (Publisher and Total Pages) distinctly per assigned Classroom rather than globally.</li>
+            <li><strong>Dynamic Class Bindings:</strong> Upgraded the Subject Editor to list dynamically bound classes, allowing editors to assign distinct curriculum values instantly per class context.</li>
+            <li><strong>Accurate Stats Reporting:</strong> Fixed the Syllabus Stats Tracker UI to reliably interpret limits based solely on the current class context to prevent inaccurate aggregate reporting.</li>
           </ul>
 
-          <h3>✍️ Enhanced Editors & Validation</h3>
+          <h3>Enhanced UI & Editors</h3>
           <ul>
-            <li><strong>Intelligent Page Warnings:</strong> The Chapter Editor now cross-references your subject's total pages. If you attempt to add a chapter range that exceeds the book's capacity, the system triggers a confirmation warning.</li>
-            <li><strong>Subject Metadata:</strong> Redesigned Subject cards in the management screen to elegantly display both the Publisher and Page Count using modern dual-label tags.</li>
+            <li><strong>Subject Editor Redesign:</strong> Refactored classroom selection grid to use <code>TigleGroupedCard</code> for better visual grouping and consistency.</li>
+            <li><strong>Book Coverage Redesign:</strong> Redesigned "Book Coverage" card with a percentage pill, inline remaining count, and a visual progress bar using <code>TigleProgressBar</code>.</li>
+            <li><strong>Page Range Warnings:</strong> Added a warning confirmation in the Chapter Editor if the page range exceeds the book's defined total pages.</li>
+            <li><strong>Subject Cards:</strong> Moved page count to the top-right tag for a cleaner card layout.</li>
+            <li><strong>Dashboard KPIs:</strong> Standardized all dashboard KPIs to use <code>TigleStatCard</code> with rich text metric support via new <code>valueWidget</code> property.</li>
           </ul>
 
-          <h3>🛠️ Bug Fixes & Stability</h3>
+          <h3>Data Integrity</h3>
           <ul>
-            <li><strong>Layout Engine Fix:</strong> Resolved a critical "RenderBox was not laid out" crash in the Syllabus Stats grid affecting both Mobile and Desktop views.</li>
-            <li><strong>UI Kit Synchronization:</strong> Fixed a parameter mismatch in <code>TigleDualLabelTag</code> and updated <code>TigleStatCard</code> to better handle dynamic rich-text metrics.</li>
-            <li>Resolved an issue where page range alignments caused <code>hasSize</code> assertion failures during layout rebuilds.</li>
+            <li><strong>Cascading Deletes:</strong> Implemented "Clean Sweep" cascading deletes for Classrooms to prevent orphaned data in Isar. Automatically purges Syllabus, Planning, and Review data when a Classroom is deleted.</li>
+            <li><strong>Delete Warnings:</strong> Enhanced delete confirmation dialogs to explicitly warn about associated data loss.</li>
+          </ul>
+
+          <h3>Bug Fixes</h3>
+          <ul>
+            <li>Fixed an issue where removing a subject from a classroom in School Structure did not persist due to IsarLink transaction constraints.</li>
+            <li>Fixed a bug where assigning subjects to classrooms via School Structure did not update the <code>classroomMetas</code> count on the Subjects summary screen.</li>
+          </ul>
+
+          <h3>UI Kit Cleanup</h3>
+          <ul>
+            <li>Removed <code>TigleIndexStatCard</code> from the UI Kit to simplify the design system.</li>
+            <li>Standardized header layouts and bulk selection controls across editors.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Sun, 08 Mar 2026 00:30:00 +0500</pubDate>
+      <pubDate>Fri, 27 Mar 2026 00:30:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.5.5+22"
+                 sparkle:version="1.5.8+23"
                  sparkle:os="windows"
                  length="0" 
                  type="application/octet-stream" />
