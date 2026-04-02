@@ -5,53 +5,47 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.5.8</title>
-      <sparkle:version>1.5.8+23</sparkle:version>
+      <title>Version 1.6.0</title>
+      <sparkle:version>1.6.0+24</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>What's New in 1.5.8</h2>
+          <h2>What's New in 1.6.0</h2>
 
-          <h3>Subject Model & Classroom Metadata</h3>
+          <h3>Student Admission Module</h3>
           <ul>
-            <li><strong>Per-Classroom Book Metadata:</strong> Refactored Subject models to define dynamic Book metadata (Publisher and Total Pages) distinctly per assigned Classroom rather than globally.</li>
-            <li><strong>Dynamic Class Bindings:</strong> Upgraded the Subject Editor to list dynamically bound classes, allowing editors to assign distinct curriculum values instantly per class context.</li>
-            <li><strong>Accurate Stats Reporting:</strong> Fixed the Syllabus Stats Tracker UI to reliably interpret limits based solely on the current class context to prevent inaccurate aggregate reporting.</li>
+            <li><strong>Complete Student Management:</strong> Added comprehensive Student Admission module with full CRUD operations for student records.</li>
+            <li><strong>Student Model:</strong> Implemented <code>Student</code> Isar collection with 25+ fields covering Personal, Academic, Parent, and Fee information.</li>
+            <li><strong>Student Service:</strong> Created <code>StudentService</code> for managing student records with duplicate check functionality.</li>
+            <li><strong>Admission Form:</strong> Built comprehensive <code>StudentAdmissionForm</code> with grouped sections using <code>TigleFormSection</code>.</li>
+            <li><strong>Management Dashboard:</strong> Integrated Student Management into the main <code>ManagementScreen</code> dashboard.</li>
           </ul>
 
-          <h3>Enhanced UI & Editors</h3>
+          <h3>Responsive UI & Grouping</h3>
           <ul>
-            <li><strong>Subject Editor Redesign:</strong> Refactored classroom selection grid to use <code>TigleGroupedCard</code> for better visual grouping and consistency.</li>
-            <li><strong>Book Coverage Redesign:</strong> Redesigned "Book Coverage" card with a percentage pill, inline remaining count, and a visual progress bar using <code>TigleProgressBar</code>.</li>
-            <li><strong>Page Range Warnings:</strong> Added a warning confirmation in the Chapter Editor if the page range exceeds the book's defined total pages.</li>
-            <li><strong>Subject Cards:</strong> Moved page count to the top-right tag for a cleaner card layout.</li>
-            <li><strong>Dashboard KPIs:</strong> Standardized all dashboard KPIs to use <code>TigleStatCard</code> with rich text metric support via new <code>valueWidget</code> property.</li>
-          </ul>
-
-          <h3>Data Integrity</h3>
-          <ul>
-            <li><strong>Cascading Deletes:</strong> Implemented "Clean Sweep" cascading deletes for Classrooms to prevent orphaned data in Isar. Automatically purges Syllabus, Planning, and Review data when a Classroom is deleted.</li>
-            <li><strong>Delete Warnings:</strong> Enhanced delete confirmation dialogs to explicitly warn about associated data loss.</li>
+            <li><strong>Responsive Layout:</strong> Overhauled Student Management to use a responsive grid/list layout that adapts to screen size.</li>
+            <li><strong>Automatic Grouping:</strong> Students are now automatically grouped by their classroom for easier navigation.</li>
+            <li><strong>Enhanced Cards:</strong> Student cards now display prominent Admission ID, Father's Name, Gender, and Phone numbers.</li>
+            <li><strong>Eager Loading:</strong> Updated <code>StudentService</code> to eager-load classroom links for accurate grouping.</li>
           </ul>
 
           <h3>Bug Fixes</h3>
           <ul>
-            <li>Fixed an issue where removing a subject from a classroom in School Structure did not persist due to IsarLink transaction constraints.</li>
-            <li>Fixed a bug where assigning subjects to classrooms via School Structure did not update the <code>classroomMetas</code> count on the Subjects summary screen.</li>
+            <li><strong>Layout Fix:</strong> Resolved "unbounded height" error on mobile by replacing <code>Spacer()</code> with fixed spacing in <code>_StudentGridCard</code>.</li>
+            <li><strong>UI Clarity:</strong> Updated student card label from "ID:" to "Adm No:" for better clarity.</li>
           </ul>
 
-          <h3>UI Kit Cleanup</h3>
+          <h3>Filtering</h3>
           <ul>
-            <li>Removed <code>TigleIndexStatCard</code> from the UI Kit to simplify the design system.</li>
-            <li>Standardized header layouts and bulk selection controls across editors.</li>
+            <li><strong>Filter Support:</strong> Added filtering capabilities for enhanced data navigation.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Fri, 27 Mar 2026 00:30:00 +0500</pubDate>
+      <pubDate>Thu, 03 Apr 2026 00:00:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.5.8+23"
+                 sparkle:version="1.6.0+24"
                  sparkle:os="windows"
-                 length="0" 
+                 length="0"
                  type="application/octet-stream" />
     </item>
   </channel>
