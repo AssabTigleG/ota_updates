@@ -5,20 +5,22 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.6.0</title>
-      <sparkle:version>1.6.0+24</sparkle:version>
+      <title>Version 1.6.5</title>
+      <sparkle:version>1.6.5+25</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>What's New in 1.6.0</h2>
+          <h2>What's New in 1.6.5</h2>
 
-          <h3>Student Admission Module</h3>
+          <h3>Student Admission & Management</h3>
           <ul>
             <li><strong>Complete Student Management:</strong> Added comprehensive Student Admission module with full CRUD operations for student records.</li>
             <li><strong>Student Model:</strong> Implemented <code>Student</code> Isar collection with 25+ fields covering Personal, Academic, Parent, and Fee information.</li>
             <li><strong>Student Service:</strong> Created <code>StudentService</code> for managing student records with duplicate check functionality.</li>
             <li><strong>Admission Form:</strong> Built comprehensive <code>StudentAdmissionForm</code> with grouped sections using <code>TigleFormSection</code>.</li>
             <li><strong>Management Dashboard:</strong> Integrated Student Management into the main <code>ManagementScreen</code> dashboard.</li>
+            <li><strong>Searchable Dropdown:</strong> Replaced student input fields with searchable dropdown for better user experience.</li>
+            <li><strong>Student Details Form:</strong> Enhanced student details form with improved UI and validation.</li>
           </ul>
 
           <h3>Responsive UI & Grouping</h3>
@@ -29,21 +31,37 @@
             <li><strong>Eager Loading:</strong> Updated <code>StudentService</code> to eager-load classroom links for accurate grouping.</li>
           </ul>
 
-          <h3>Bug Fixes</h3>
+          <h3>School Structure Improvements</h3>
           <ul>
-            <li><strong>Layout Fix:</strong> Resolved "unbounded height" error on mobile by replacing <code>Spacer()</code> with fixed spacing in <code>_StudentGridCard</code>.</li>
-            <li><strong>UI Clarity:</strong> Updated student card label from "ID:" to "Adm No:" for better clarity.</li>
+            <li><strong>Classroom Cards:</strong> Major UI overhaul to classroom cards with enhanced visual design and responsive behavior.</li>
+            <li><strong>Section Column:</strong> Refined section column widget with improved layout and interaction patterns.</li>
+            <li><strong>School Structure Screen:</strong> Optimized school structure screen with cleaner UI and better information hierarchy.</li>
+            <li><strong>Pages Information:</strong> Added comprehensive pages information to school structure models and services.</li>
           </ul>
 
           <h3>Filtering</h3>
           <ul>
-            <li><strong>Filter Support:</strong> Added filtering capabilities for enhanced data navigation.</li>
+            <li><strong>Filter Support:</strong> Added filtering capabilities to student management for enhanced data navigation.</li>
+          </ul>
+
+          <h3>Bug Fixes & Improvements</h3>
+          <ul>
+            <li><strong>Layout Fix:</strong> Resolved "unbounded height" error on mobile by replacing <code>Spacer()</code> with fixed spacing in <code>_StudentGridCard</code>.</li>
+            <li><strong>UI Clarity:</strong> Updated student card label from "ID:" to "Adm No:" for better clarity.</li>
+            <li><strong>Android Version UI:</strong> Updated Android version display with improved visual design.</li>
+            <li><strong>Code Cleanup:</strong> Significant refactoring and code cleanup across school structure screens (~150 lines reduced).</li>
+          </ul>
+
+          <h3>Configuration & Build</h3>
+          <ul>
+            <li><strong>Version Bump:</strong> Updated to version 1.6.5.</li>
+            <li><strong>Installer Updates:</strong> Updated desktop installer scripts and appcast configuration.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Thu, 03 Apr 2026 00:00:00 +0500</pubDate>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.6.0+24"
+                 sparkle:version="1.6.5+25"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
