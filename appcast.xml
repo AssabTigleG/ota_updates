@@ -5,63 +5,67 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.6.5</title>
-      <sparkle:version>1.6.5+25</sparkle:version>
+      <title>Version 1.7.0</title>
+      <sparkle:version>1.7.0+26</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <description>
         <![CDATA[
-          <h2>What's New in 1.6.5</h2>
+          <h2>What's New in 1.7.0</h2>
 
-          <h3>Student Admission & Management</h3>
+          <h3>Classroom Observation System</h3>
           <ul>
-            <li><strong>Complete Student Management:</strong> Added comprehensive Student Admission module with full CRUD operations for student records.</li>
-            <li><strong>Student Model:</strong> Implemented <code>Student</code> Isar collection with 25+ fields covering Personal, Academic, Parent, and Fee information.</li>
-            <li><strong>Student Service:</strong> Created <code>StudentService</code> for managing student records with duplicate check functionality.</li>
-            <li><strong>Admission Form:</strong> Built comprehensive <code>StudentAdmissionForm</code> with grouped sections using <code>TigleFormSection</code>.</li>
-            <li><strong>Management Dashboard:</strong> Integrated Student Management into the main <code>ManagementScreen</code> dashboard.</li>
-            <li><strong>Searchable Dropdown:</strong> Replaced student input fields with searchable dropdown for better user experience.</li>
-            <li><strong>Student Details Form:</strong> Enhanced student details form with improved UI and validation.</li>
+            <li><strong>Phase 1 Implementation:</strong> Introduced comprehensive Classroom Observation module for teacher performance evaluation.</li>
+            <li><strong>Teacher Analytics Dashboards:</strong> Added teacher-specific Classroom Observation dashboards with trend charts for performance tracking.</li>
+            <li><strong>Observation History:</strong> Built detailed view for individual Classroom Observation records with complete history tracking.</li>
+            <li><strong>Consolidated Feedback:</strong> Added consolidated feedback dialog for classroom reviews with professional report format.</li>
+            <li><strong>Report Generation:</strong> Implemented <code>generateClassroomObservationReport</code> in ReportGenerator for structured teacher feedback.</li>
+            <li><strong>Background Calculations:</strong> Full background calculation logic for Classroom Observation analytics with Isar serialization crash fixes.</li>
+            <li><strong>Raw Average Field:</strong> Added <code>rawAverage</code> field to <code>TeacherStats</code> for pedagogical scoring.</li>
           </ul>
 
-          <h3>Responsive UI & Grouping</h3>
+          <h3>Analytics & Reporting</h3>
           <ul>
-            <li><strong>Responsive Layout:</strong> Overhauled Student Management to use a responsive grid/list layout that adapts to screen size.</li>
-            <li><strong>Automatic Grouping:</strong> Students are now automatically grouped by their classroom for easier navigation.</li>
-            <li><strong>Enhanced Cards:</strong> Student cards now display prominent Admission ID, Father's Name, Gender, and Phone numbers.</li>
-            <li><strong>Eager Loading:</strong> Updated <code>StudentService</code> to eager-load classroom links for accurate grouping.</li>
+            <li><strong>Context-Aware Analytics:</strong> Updated <code>AnalyticsSummaryCards</code> to show Classroom-specific labels (Observations/Classes) when evaluating teaching performance.</li>
+            <li><strong>Grouped Criteria:</strong> Organized 20 Classroom criteria into four logical pedagogical domains: Documentation, Instruction, Communication, and Management.</li>
+            <li><strong>Standardized Analytics:</strong> Refactored Classroom Observation analytics to match the grouped criteria UI of Notebooks.</li>
+            <li><strong>Deep Linking:</strong> Added routes for deep-linking into classroom analytics and history details.</li>
           </ul>
 
-          <h3>School Structure Improvements</h3>
+          <h3>UI Improvements</h3>
           <ul>
-            <li><strong>Classroom Cards:</strong> Major UI overhaul to classroom cards with enhanced visual design and responsive behavior.</li>
-            <li><strong>Section Column:</strong> Refined section column widget with improved layout and interaction patterns.</li>
-            <li><strong>School Structure Screen:</strong> Optimized school structure screen with cleaner UI and better information hierarchy.</li>
-            <li><strong>Pages Information:</strong> Added comprehensive pages information to school structure models and services.</li>
+            <li><strong>Professional Header:</strong> Refactored Classroom Observation header from a flat stretched card to a professional multi-card Stat Header with improved information hierarchy.</li>
+            <li><strong>KPI Cards:</strong> Separated Progress, Context, and Identity into distinct KPI cards with specialized Action Card within the header grid.</li>
+            <li><strong>Desktop Optimization:</strong> Optimized the Classroom Observation detail view for desktop with expanded content area and improved information density.</li>
+            <li><strong>Standardized Layouts:</strong> Aligned <code>ClassroomHistoryDetailScreen</code> to match the high-quality layout and KPI structure of Notebook details.</li>
+            <li><strong>Empty States:</strong> Added missing empty state builders to Classroom Observation analytics, preventing blank screens when no data is found.</li>
+            <li><strong>Reset Action Card:</strong> Replaced wrapper with <code>TigleStatCard</code> for the reset action to match StatCard sizing and simplify the widget tree.</li>
           </ul>
 
-          <h3>Filtering</h3>
+          <h3>Component Updates</h3>
           <ul>
-            <li><strong>Filter Support:</strong> Added filtering capabilities to student management for enhanced data navigation.</li>
+            <li><strong>TigleListTile Enhancement:</strong> Added custom <code>padding</code> parameter support for consistent padding across all list tiles.</li>
+            <li><strong>Standardized Padding:</strong> Normalized spacing across several UI lists with consistent TigleCard/TigleListTile padding (horizontal: 16, vertical: 12).</li>
+            <li><strong>Reduced Widget Nesting:</strong> Simplified teacher allocations list and other UI components by removing redundant widget nesting.</li>
+            <li><strong>Criteria Breakdown:</strong> Decreased padding in criteria breakdown for better space utilization.</li>
           </ul>
 
-          <h3>Bug Fixes & Improvements</h3>
+          <h3>Bug Fixes</h3>
           <ul>
-            <li><strong>Layout Fix:</strong> Resolved "unbounded height" error on mobile by replacing <code>Spacer()</code> with fixed spacing in <code>_StudentGridCard</code>.</li>
-            <li><strong>UI Clarity:</strong> Updated student card label from "ID:" to "Adm No:" for better clarity.</li>
-            <li><strong>Android Version UI:</strong> Updated Android version display with improved visual design.</li>
-            <li><strong>Code Cleanup:</strong> Significant refactoring and code cleanup across school structure screens (~150 lines reduced).</li>
+            <li><strong>Isar Serialization:</strong> Fixed crash by using record-based data passing to background isolates.</li>
+            <li><strong>Undefined Parameter:</strong> Resolved undefined parameter error in <code>ClassroomReviewScreen</code> by properly supporting the padding argument.</li>
+            <li><strong>General Stability:</strong> Multiple fixes for Classroom Observation module to ensure smooth operation.</li>
           </ul>
 
           <h3>Configuration & Build</h3>
           <ul>
-            <li><strong>Version Bump:</strong> Updated to version 1.6.5.</li>
+            <li><strong>Version Bump:</strong> Updated to version 1.7.0.</li>
             <li><strong>Installer Updates:</strong> Updated desktop installer scripts and appcast configuration.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Mon, 06 Apr 2026 00:00:00 +0500</pubDate>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.6.5+25"
+                 sparkle:version="1.7.0+26"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
