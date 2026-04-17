@@ -16,7 +16,7 @@
         ]]>
       </description>
       <enclosure url="https://yourwebsite.com/downloads/tigle_property_v1.2.0.apk" sparkle:os="android" />
-      <enclosure url="https://yourwebsite.com/downloads/tigle_property_v1.2.0.exe" sparkle:os="windows" />
+      <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleProperty/tigle_ledger_setup.exe" sparkle:os="windows" />
     </item>
   </channel>
 </rss>
