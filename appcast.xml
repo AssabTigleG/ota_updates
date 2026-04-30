@@ -5,67 +5,62 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.7.0</title>
-      <sparkle:version>1.7.0+26</sparkle:version>
-      <eduverse:force>false</eduverse:force>
+      <title>Version 1.8.0</title>
+      <sparkle:version>1.8.0+27</sparkle:version>
+      <eduverse:force>true</eduverse:force>
       <description>
         <![CDATA[
-          <h2>What's New in 1.7.0</h2>
+          <h2>What's New in 1.8.0</h2>
 
-          <h3>Classroom Observation System</h3>
+          <h3>Parent Questionnaire System</h3>
           <ul>
-            <li><strong>Phase 1 Implementation:</strong> Introduced comprehensive Classroom Observation module for teacher performance evaluation.</li>
-            <li><strong>Teacher Analytics Dashboards:</strong> Added teacher-specific Classroom Observation dashboards with trend charts for performance tracking.</li>
-            <li><strong>Observation History:</strong> Built detailed view for individual Classroom Observation records with complete history tracking.</li>
-            <li><strong>Consolidated Feedback:</strong> Added consolidated feedback dialog for classroom reviews with professional report format.</li>
-            <li><strong>Report Generation:</strong> Implemented <code>generateClassroomObservationReport</code> in ReportGenerator for structured teacher feedback.</li>
-            <li><strong>Background Calculations:</strong> Full background calculation logic for Classroom Observation analytics with Isar serialization crash fixes.</li>
-            <li><strong>Raw Average Field:</strong> Added <code>rawAverage</code> field to <code>TeacherStats</code> for pedagogical scoring.</li>
+            <li><strong>Institutional Feedback:</strong> Launched a dedicated module for capturing parent feedback on school performance and student well-being.</li>
+            <li><strong>Weighted Point System:</strong> Implemented a specialized scoring logic ranging from +2 (Strongly Agree) to -2 (Strongly Disagree).</li>
+            <li><strong>Grouped Feedback Domains:</strong> Organized 18 parent questions into three pedagogical categories: Student Wellbeing, Teaching & Information, and School Leadership.</li>
+            <li><strong>Student-Centric Context:</strong> Replaced teacher-dependency with Student/Classroom context for broader institutional evaluation.</li>
           </ul>
 
-          <h3>Analytics & Reporting</h3>
+          <h3>School Satisfaction Analytics</h3>
           <ul>
-            <li><strong>Context-Aware Analytics:</strong> Updated <code>AnalyticsSummaryCards</code> to show Classroom-specific labels (Observations/Classes) when evaluating teaching performance.</li>
-            <li><strong>Grouped Criteria:</strong> Organized 20 Classroom criteria into four logical pedagogical domains: Documentation, Instruction, Communication, and Management.</li>
-            <li><strong>Standardized Analytics:</strong> Refactored Classroom Observation analytics to match the grouped criteria UI of Notebooks.</li>
-            <li><strong>Deep Linking:</strong> Added routes for deep-linking into classroom analytics and history details.</li>
+            <li><strong>Satisfaction Index:</strong> Added a real-time "School Satisfaction Index" that aggregates parent sentiment into a percentage-based performance metric.</li>
+            <li><strong>Improvement Area Tracking:</strong> New analytics card that automatically identifies the lowest-performing feedback category for management focus.</li>
+            <li><strong>Neutrality Rate:</strong> Implemented tracking for "No Answer" responses to measure parent engagement and information transparency.</li>
+            <li><strong>Satisfaction Trends:</strong> Integrated time-series charts to monitor how parent perception changes across academic terms.</li>
           </ul>
 
-          <h3>UI Improvements</h3>
+          <h3>Performance Standards</h3>
           <ul>
-            <li><strong>Professional Header:</strong> Refactored Classroom Observation header from a flat stretched card to a professional multi-card Stat Header with improved information hierarchy.</li>
-            <li><strong>KPI Cards:</strong> Separated Progress, Context, and Identity into distinct KPI cards with specialized Action Card within the header grid.</li>
-            <li><strong>Desktop Optimization:</strong> Optimized the Classroom Observation detail view for desktop with expanded content area and improved information density.</li>
-            <li><strong>Standardized Layouts:</strong> Aligned <code>ClassroomHistoryDetailScreen</code> to match the high-quality layout and KPI structure of Notebook details.</li>
-            <li><strong>Empty States:</strong> Added missing empty state builders to Classroom Observation analytics, preventing blank screens when no data is found.</li>
-            <li><strong>Reset Action Card:</strong> Replaced wrapper with <code>TigleStatCard</code> for the reset action to match StatCard sizing and simplify the widget tree.</li>
+            <li><strong>Parent Context:</strong> Added "Parent" as a first-class citizen in the Performance Standards system.</li>
+            <li><strong>Customizable Thresholds:</strong> Management can now manually define percentage boundaries for High Satisfaction, Good Feedback, Mixed Feedback, and Low Satisfaction.</li>
           </ul>
 
-          <h3>Component Updates</h3>
+          <h3>Reporting & History</h3>
           <ul>
-            <li><strong>TigleListTile Enhancement:</strong> Added custom <code>padding</code> parameter support for consistent padding across all list tiles.</li>
-            <li><strong>Standardized Padding:</strong> Normalized spacing across several UI lists with consistent TigleCard/TigleListTile padding (horizontal: 16, vertical: 12).</li>
-            <li><strong>Reduced Widget Nesting:</strong> Simplified teacher allocations list and other UI components by removing redundant widget nesting.</li>
-            <li><strong>Criteria Breakdown:</strong> Decreased padding in criteria breakdown for better space utilization.</li>
+            <li><strong>Formatted Reports:</strong> Integrated ReportGenerator for Parent Questionnaires, allowing professional, structured text sharing via clipboard.</li>
+            <li><strong>High-Contrast Remarks:</strong> Refactored Consolidated Remark sheets with filled, color-coded badges for maximum readability and accessibility.</li>
+            <li><strong>History Details:</strong> Comprehensive history tracking with student-specific feedback logs and point-to-percentage mapping.</li>
+            <li><strong>Advanced Filtering:</strong> Added granular filters to History and Analytics to view feedback by Classroom, Specific Student, or Satisfaction score.</li>
           </ul>
 
-          <h3>Bug Fixes</h3>
+          <h3>Bug Fixes & UI Polishing</h3>
           <ul>
-            <li><strong>Isar Serialization:</strong> Fixed crash by using record-based data passing to background isolates.</li>
-            <li><strong>Undefined Parameter:</strong> Resolved undefined parameter error in <code>ClassroomReviewScreen</code> by properly supporting the padding argument.</li>
-            <li><strong>General Stability:</strong> Multiple fixes for Classroom Observation module to ensure smooth operation.</li>
+            <li><strong>Persistence Fix:</strong> Resolved an issue where parent remarks would disappear when scrolling due to ListView recycling.</li>
+            <li><strong>Date Logic:</strong> Implemented "Scope Aware" setup that defaults the review date to the currently selected Academic Period.</li>
+            <li><strong>Editor Crash:</strong> Fixed a critical "Red Screen" crash when opening standards in the Parent context.</li>
+            <li><strong>Chart Precision:</strong> Fixed a bug showing long decimal numbers on satisfaction trend tooltips.</li>
+            <li><strong>UI Kit Update:</strong> Enhanced <code>TigleDropdown</code> with <code>enabled</code> state support for better cascading filter UX.</li>
           </ul>
 
-          <h3>Configuration & Build</h3>
+          <h3>Configuration</h3>
           <ul>
-            <li><strong>Version Bump:</strong> Updated to version 1.7.0.</li>
-            <li><strong>Installer Updates:</strong> Updated desktop installer scripts and appcast configuration.</li>
+            <li><strong>Version Bump:</strong> Updated to version 1.8.0.</li>
+            <li><strong>Database Schema:</strong> Added <code>ParentQuestionnaireEntry</code> collection to the Isar database.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0500</pubDate>
+      <pubDate>Thu, 30 Apr 2026 18:00:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.7.0+26"
+                 sparkle:version="1.8.0+27"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
