@@ -5,62 +5,59 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.8.0</title>
-      <sparkle:version>1.8.0+27</sparkle:version>
+      <title>Version 1.8.5</title>
+      <sparkle:version>1.8.5+28</sparkle:version>
       <eduverse:force>true</eduverse:force>
       <description>
         <![CDATA[
-          <h2>What's New in 1.8.0</h2>
+          <h2>What's New in 1.8.5</h2>
 
-          <h3>Parent Questionnaire System</h3>
+          <h3>Daily Notebook Monitoring</h3>
           <ul>
-            <li><strong>Institutional Feedback:</strong> Launched a dedicated module for capturing parent feedback on school performance and student well-being.</li>
-            <li><strong>Weighted Point System:</strong> Implemented a specialized scoring logic ranging from +2 (Strongly Agree) to -2 (Strongly Disagree).</li>
-            <li><strong>Grouped Feedback Domains:</strong> Organized 18 parent questions into three pedagogical categories: Student Wellbeing, Teaching & Information, and School Leadership.</li>
-            <li><strong>Student-Centric Context:</strong> Replaced teacher-dependency with Student/Classroom context for broader institutional evaluation.</li>
+            <li><strong>Dual Review Modes:</strong> Introduced "Daily Quick Check" alongside "Full Notebook Audit" to support high-frequency pulse monitoring.</li>
+            <li><strong>Intelligent Mode Switching:</strong> Unified the entry point into a single "Notebook Review" module with a high-fidelity toggle in the setup phase.</li>
+            <li><strong>Contextual Awareness:</strong> The interface now dynamically adapts titles, logic, and analytics based on the selected monitoring mode.</li>
           </ul>
 
-          <h3>School Satisfaction Analytics</h3>
+          <h3>Analytics & History Redesign</h3>
           <ul>
-            <li><strong>Satisfaction Index:</strong> Added a real-time "School Satisfaction Index" that aggregates parent sentiment into a percentage-based performance metric.</li>
-            <li><strong>Improvement Area Tracking:</strong> New analytics card that automatically identifies the lowest-performing feedback category for management focus.</li>
-            <li><strong>Neutrality Rate:</strong> Implemented tracking for "No Answer" responses to measure parent engagement and information transparency.</li>
-            <li><strong>Satisfaction Trends:</strong> Integrated time-series charts to monitor how parent perception changes across academic terms.</li>
+            <li><strong>Sidebar Navigation:</strong> Implemented Windows-optimized right sidebars in both History and Analytics for seamless switching between Audit and Daily datasets.</li>
+            <li><strong>Isolated Data Streams:</strong> Formal Audits and Daily Checks now maintain completely separate performance trends to prevent frequent checks from skewing formal audit data.</li>
+            <li><strong>Responsive Command Center:</strong> Redesigned the Analytics dashboard to support side-by-side criteria breakdown and trend visualization on desktop.</li>
           </ul>
 
-          <h3>Performance Standards</h3>
+          <h3>Modernized Drafts Management</h3>
           <ul>
-            <li><strong>Parent Context:</strong> Added "Parent" as a first-class citizen in the Performance Standards system.</li>
-            <li><strong>Customizable Thresholds:</strong> Management can now manually define percentage boundaries for High Satisfaction, Good Feedback, Mixed Feedback, and Low Satisfaction.</li>
+            <li><strong>Windows Dashboard UI:</strong> Complete ground-up redesign of the Drafts screen using an adaptive grid system optimized for wide screens.</li>
+            <li><strong>Rich Content Previews:</strong> Draft cards now display teacher avatars, mode badges (DAILY/AUDIT), and a preview of the Grades/Subjects contained within.</li>
+            <li><strong>Resumption Logic 2.0:</strong> Rewrote the draft resumption engine to use persistent memory (keepAlive) and absolute routing, ensuring data is never lost during app restarts.</li>
           </ul>
 
-          <h3>Reporting & History</h3>
+          <h3>Academic Schedule Precision</h3>
           <ul>
-            <li><strong>Formatted Reports:</strong> Integrated ReportGenerator for Parent Questionnaires, allowing professional, structured text sharing via clipboard.</li>
-            <li><strong>High-Contrast Remarks:</strong> Refactored Consolidated Remark sheets with filled, color-coded badges for maximum readability and accessibility.</li>
-            <li><strong>History Details:</strong> Comprehensive history tracking with student-specific feedback logs and point-to-percentage mapping.</li>
-            <li><strong>Advanced Filtering:</strong> Added granular filters to History and Analytics to view feedback by Classroom, Specific Student, or Satisfaction score.</li>
+            <li><strong>Intelligent Auto-Fill:</strong> New semesters now automatically default to 6-month durations, while rounds strictly follow the "+1 Day Gap" rule to prevent overlap errors.</li>
+            <li><strong>Date Boundary Normalization:</strong> Refactored the core period service to include full-day coverage (00:00:00 to 23:59:59), resolving issues where data saved on the last day of a period would "vanish."</li>
+            <li><strong>Scope-Aware Initialization:</strong> Starting a review now automatically picks a valid date within your currently selected Academic Scope.</li>
           </ul>
 
-          <h3>Bug Fixes & UI Polishing</h3>
+          <h3>Validation & UI Polishing</h3>
           <ul>
-            <li><strong>Persistence Fix:</strong> Resolved an issue where parent remarks would disappear when scrolling due to ListView recycling.</li>
-            <li><strong>Date Logic:</strong> Implemented "Scope Aware" setup that defaults the review date to the currently selected Academic Period.</li>
-            <li><strong>Editor Crash:</strong> Fixed a critical "Red Screen" crash when opening standards in the Parent context.</li>
-            <li><strong>Chart Precision:</strong> Fixed a bug showing long decimal numbers on satisfaction trend tooltips.</li>
-            <li><strong>UI Kit Update:</strong> Enhanced <code>TigleDropdown</code> with <code>enabled</code> state support for better cascading filter UX.</li>
+            <li><strong>Strict Data Integrity:</strong> Enforced student selection requirement; the "Finish" button now remains disabled until a student is assigned to every notebook.</li>
+            <li><strong>Teacher Context Pill:</strong> Added a tertiary-colored pill in the Review AppBar for persistent identification of the teacher under review.</li>
+            <li><strong>Enhanced Selectors:</strong> Updated <code>TigleSearchableDropdown</code> to show "Name (Father)" in search but only "Name" in the selected field for a cleaner UI.</li>
+            <li><strong>Stability Fixes:</strong> Resolved a critical crash in the DatePicker when future academic periods were selected.</li>
           </ul>
 
-          <h3>Configuration</h3>
+          <h3>Technical Changes</h3>
           <ul>
-            <li><strong>Version Bump:</strong> Updated to version 1.8.0.</li>
-            <li><strong>Database Schema:</strong> Added <code>ParentQuestionnaireEntry</code> collection to the Isar database.</li>
+            <li><strong>Version Bump:</strong> Upgraded to version 1.8.5+28.</li>
+            <li><strong>Provider Refactor:</strong> Migrated ReviewSessionController to a non-reactive persistent state model for maximum data stability.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Thu, 30 Apr 2026 18:00:00 +0500</pubDate>
+      <pubDate>Wed, 13 May 2026 23:30:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.8.0+27"
+                 sparkle:version="1.8.5+28"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
