@@ -3,8 +3,8 @@
   <channel>
     <title>Tigle Property Updates</title>
     <item>
-      <title>Version 1.4.0</title>
-      <sparkle:version>1.4.0</sparkle:version>
+      <title>Version 1.5.0</title>
+      <sparkle:version>1.5.0</sparkle:version>
       <tigle:isCritical>true</tigle:isCritical>
       <description>
         <![CDATA[
@@ -13,7 +13,7 @@
           </ul>
         ]]>
       </description>
-      <enclosure url="https://yourwebsite.com/downloads/tigle_property_v1.4.0.apk" sparkle:os="android" />
+      <enclosure url="https://yourwebsite.com/downloads/tigle_property_v1.5.0.apk" sparkle:os="android" />
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleProperty/tigle_property_setup.exe" sparkle:os="windows" />
     </item>
   </channel>
