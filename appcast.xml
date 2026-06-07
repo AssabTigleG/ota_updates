@@ -5,59 +5,58 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.8.5</title>
-      <sparkle:version>1.8.5+28</sparkle:version>
-      <eduverse:force>true</eduverse:force>
+      <title>Version 1.9.0</title>
+      <sparkle:version>1.9.0+30</sparkle:version>
+      <eduverse:force>false</eduverse:force>
+      <eduverse:lockout>true</eduverse:lockout>
       <description>
         <![CDATA[
-          <h2>What's New in 1.8.5</h2>
+          <h2>What's New in 1.9.0</h2>
 
-          <h3>Daily Notebook Monitoring</h3>
+          <h3>Parametric Review Tracking Sheets</h3>
           <ul>
-            <li><strong>Dual Review Modes:</strong> Introduced "Daily Quick Check" alongside "Full Notebook Audit" to support high-frequency pulse monitoring.</li>
-            <li><strong>Intelligent Mode Switching:</strong> Unified the entry point into a single "Notebook Review" module with a high-fidelity toggle in the setup phase.</li>
-            <li><strong>Contextual Awareness:</strong> The interface now dynamically adapts titles, logic, and analytics based on the selected monitoring mode.</li>
+            <li><strong>Randomized Tracking Calendars:</strong> Introduced fully randomized, configurable tracking sheets that match your physical printed schedule layouts.</li>
+            <li><strong>Flexible Generation Configurations:</strong> Added a setup panel allowing users to configure custom parameters for Total Days, Class Ranges per row, Subject Ranges per row, and Student counts.</li>
+            <li><strong>Intelligent Scheduling Toggles:</strong> Integrated optional support for Union ("Any Subject") vs. Intersection ("Common Subjects Only") and a "Strict Deduplication" filter to prevent back-to-back repeats of classrooms, subjects, and students.</li>
           </ul>
 
-          <h3>Analytics & History Redesign</h3>
+          <h3>Interactive Spreadsheet & Data Grid</h3>
           <ul>
-            <li><strong>Sidebar Navigation:</strong> Implemented Windows-optimized right sidebars in both History and Analytics for seamless switching between Audit and Daily datasets.</li>
-            <li><strong>Isolated Data Streams:</strong> Formal Audits and Daily Checks now maintain completely separate performance trends to prevent frequent checks from skewing formal audit data.</li>
-            <li><strong>Responsive Command Center:</strong> Redesigned the Analytics dashboard to support side-by-side criteria breakdown and trend visualization on desktop.</li>
+            <li><strong>TigleDataGrid Molecule:</strong> Engineered a generic, highly reusable, responsive spreadsheet layout component that dynamically stretches to fill wide desktop screens while preserving scroll bounds on smaller resolutions.</li>
+            <li><strong>Pill-Shaped Cohort Lists:</strong> Student roll selections are parsed dynamically to render as elegant, color-coded visual pills instead of raw comma-separated lists.</li>
+            <li><strong>Vertical Multi-Class Alignment:</strong> Handled multi-class days by stacking class rows vertically with thin, subtle grid dividers to align classrooms directly with their randomized student pools.</li>
           </ul>
 
-          <h3>Modernized Drafts Management</h3>
+          <h3>Checklist Interactivity & Autosaving</h3>
           <ul>
-            <li><strong>Windows Dashboard UI:</strong> Complete ground-up redesign of the Drafts screen using an adaptive grid system optimized for wide screens.</li>
-            <li><strong>Rich Content Previews:</strong> Draft cards now display teacher avatars, mode badges (DAILY/AUDIT), and a preview of the Grades/Subjects contained within.</li>
-            <li><strong>Resumption Logic 2.0:</strong> Rewrote the draft resumption engine to use persistent memory (keepAlive) and absolute routing, ensuring data is never lost during app restarts.</li>
+            <li><strong>Three-State Cycling Status:</strong> The ✓ or ✕ verification column now cycles dynamically on click (unmarked -> ✓ Met -> ✕ Action Needed -> unmarked) with soft green and red visual highlight indicators.</li>
+            <li><strong>Seamless Remarks Modal:</strong> Tapping the remarks column launches a localized editor sheet, preventing layout overflow bugs and popping safely without interrupting the primary grid detail view.</li>
+            <li><strong>Background Persistence:</strong> Any edits to checkboxes or remarks automatically write and save to the local Isar database instantly with zero lag.</li>
           </ul>
 
-          <h3>Academic Schedule Precision</h3>
+          <h3>Student Directory & Mandatory Roll Numbers</h3>
           <ul>
-            <li><strong>Intelligent Auto-Fill:</strong> New semesters now automatically default to 6-month durations, while rounds strictly follow the "+1 Day Gap" rule to prevent overlap errors.</li>
-            <li><strong>Date Boundary Normalization:</strong> Refactored the core period service to include full-day coverage (00:00:00 to 23:59:59), resolving issues where data saved on the last day of a period would "vanish."</li>
-            <li><strong>Scope-Aware Initialization:</strong> Starting a review now automatically picks a valid date within your currently selected Academic Scope.</li>
+            <li><strong>Required Class Roll Numbers:</strong> Added a mandatory, indexed <code>rollNo</code> field inside the student collection schema.</li>
+            <li><strong>Validation Safety:</strong> Updated the student admission form to enforce unique roll numbers within the target classroom, preventing data entry errors.</li>
+            <li><strong>Index Optimization:</strong> Fixed a critical database schema issue by migrating optional ID and Admission number fields to standard indexes, completely resolving multiple-null unique index violations.</li>
           </ul>
 
-          <h3>Validation & UI Polishing</h3>
+          <h3>Onboarding Utilities & Demo Data Generator</h3>
           <ul>
-            <li><strong>Strict Data Integrity:</strong> Enforced student selection requirement; the "Finish" button now remains disabled until a student is assigned to every notebook.</li>
-            <li><strong>Teacher Context Pill:</strong> Added a tertiary-colored pill in the Review AppBar for persistent identification of the teacher under review.</li>
-            <li><strong>Enhanced Selectors:</strong> Updated <code>TigleSearchableDropdown</code> to show "Name (Father)" in search but only "Name" in the selected field for a cleaner UI.</li>
-            <li><strong>Stability Fixes:</strong> Resolved a critical crash in the DatePicker when future academic periods were selected.</li>
+            <li><strong>Settings Utility Center:</strong> Integrated a "Developer & Onboarding Utilities" panel inside Settings.</li>
+            <li><strong>Wipe vs. Append Modes:</strong> Supports both a destructive "Fresh Reset & Load" database wipe and a non-destructive "Merge & Append" to easily populate demo structures.</li>
+            <li><strong>Dynamic Active Year Mapping:</strong> Generated datasets dynamically bind to the user's current system year, ensuring academic plans and scrollers are immediately marked **Active** instead of "Upcoming" or "Dates TBA".</li>
           </ul>
 
-          <h3>Technical Changes</h3>
+          <h3>Performance & Database Layer Stability</h3>
           <ul>
-            <li><strong>Version Bump:</strong> Upgraded to version 1.8.5+28.</li>
-            <li><strong>Provider Refactor:</strong> Migrated ReviewSessionController to a non-reactive persistent state model for maximum data stability.</li>
+            <li><strong>Async Transaction Separation:</strong> Refactored Isar link saving to run inside a separate, independent write transaction block after the main transaction closes, entirely resolving nesting conflicts (<code>IsarError: Isar does not support nesting transactions</code>).</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Wed, 13 May 2026 23:30:00 +0500</pubDate>
+      <pubDate>Sun, 07 Jun 2026 16:30:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.8.5+28"
+                 sparkle:version="1.9.0+30"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
