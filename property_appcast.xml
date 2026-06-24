@@ -3,18 +3,18 @@
   <channel>
     <title>Tigle Property Updates</title>
     <item>
-      <title>Version 2.0.0</title>
-      <sparkle:version>2.0.0</sparkle:version>
+      <title>Version 3.0.0</title>
+      <sparkle:version>3.0.0</sparkle:version>
       <tigle:isCritical>true</tigle:isCritical>
       <description>
         <![CDATA[
           <ul>
-            <li>A lot of features has been added.</li>
-            <li>All requirements are officially done.</li>
+            <li>App is no more...</li>
+            <li>App has been shutdown.</li>
           </ul>
         ]]>
       </description>
-      <enclosure url="https://yourwebsite.com/downloads/tigle_property_v2.0.0.apk" sparkle:os="android" />
+      <enclosure url="https://yourwebsite.com/downloads/tigle_property_v3.0.0.apk" sparkle:os="android" />
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleProperty/tigle_property_setup.exe" sparkle:os="windows" />
     </item>
   </channel>
