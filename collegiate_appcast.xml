@@ -5,13 +5,13 @@
     <description>Most recent updates to Collegiate</description>
     <language>en</language>
     <item>
-      <title>Version 4.1.0</title>
-      <sparkle:version>4.1.0+41</sparkle:version>
-      <collegiate:force>true</collegiate:force>
-      <collegiate:lockout>true</collegiate:lockout>
+      <title>Version 4.0.0</title>
+      <sparkle:version>4.0.0+40</sparkle:version>
+      <collegiate:force>false</collegiate:force>
+      <collegiate:lockout>false</collegiate:lockout>
       <description>
         <![CDATA[
-          <h2>What's New in 4.1.0</h2>
+          <h2>What's New in 4.0.0</h2>
 
           <h3>Full Release of Collegiate SMS</h3>
           <ul>
@@ -20,9 +20,9 @@
           </ul>
         ]]>
       </description>
-      <pubDate>Fri, 13 Jul 2026 16:30:00 +0500</pubDate>
+      <pubDate>Fri, 10 Jul 2026 16:30:00 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/collegiate_setup.exe"
-                 sparkle:version="4.1.0+41"
+                 sparkle:version="4.0.0+40"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
