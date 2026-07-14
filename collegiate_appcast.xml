@@ -8,7 +8,7 @@
       <title>Version 4.0.0</title>
       <sparkle:version>4.0.0+40</sparkle:version>
       <collegiate:force>false</collegiate:force>
-      <collegiate:lockout>false</collegiate:lockout>
+      <collegiate:lockout>true</collegiate:lockout>
       <description>
         <![CDATA[
           <h2>What's New in 4.0.0</h2>
