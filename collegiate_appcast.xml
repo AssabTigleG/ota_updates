@@ -1,28 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+<rss version="2.0" 
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:collegiate="http://schemas.collegiate.com/updater">
   <channel>
     <title>Collegiate Changelog</title>
     <description>Most recent updates to Collegiate</description>
     <language>en</language>
     <item>
-      <title>Version 4.0.0</title>
-      <sparkle:version>4.0.0+40</sparkle:version>
+      <title>Version 4.1.0</title>
+      <sparkle:version>4.1.0+41</sparkle:version>
       <collegiate:force>false</collegiate:force>
-      <collegiate:lockout>true</collegiate:lockout>
+      <collegiate:lockout>false</collegiate:lockout>
       <description>
         <![CDATA[
-          <h2>What's New in 4.0.0</h2>
+          <h2>What's New in 4.1.0</h2>
 
-          <h3>Full Release of Collegiate SMS</h3>
+          <h3>PDF &amp; CSV Exports</h3>
           <ul>
-            <li><strong>The app requirements has been finished.</li>
-            <li><strong>Fully released the last version.</li>
+            <li>Branded PDF exports for payroll, fees, attendance, exam reports, and analytics.</li>
+            <li>CSV export with native file-save dialogs.</li>
+            <li>Audit history PDF export with date-range filtering.</li>
+          </ul>
+
+          <h3>Date Sheet / Exam Schedule</h3>
+          <ul>
+            <li>Full redesign with Tigle UI components.</li>
+            <li>Time column per exam slot with start and end times.</li>
+            <li>Generate PDF date sheet grouped by classroom.</li>
+          </ul>
+
+          <h3>Class Timetable</h3>
+          <ul>
+            <li>New timetable builder with configurable days and time slots.</li>
+            <li>Tap-to-assign subjects to time-slot cells.</li>
+            <li>Teacher viewer with conflict detection across classrooms.</li>
+            <li>Branded PDF export with teacher filter.</li>
+            <li>Demo data seeder with sample timetables and conflicts.</li>
+          </ul>
+
+          <h3>Exam Enhancements</h3>
+          <ul>
+            <li>Added time selection (start and end time) to exam setup.</li>
+          </ul>
+
+          <h3>Navigation Updates</h3>
+          <ul>
+            <li>Timetable moved under Academics sidebar item.</li>
+            <li>Timetable and Date Sheet added to Campus Management hub.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Fri, 10 Jul 2026 16:30:00 +0500</pubDate>
-      <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/collegiate_setup.exe"
-                 sparkle:version="4.0.0+40"
+      <pubDate>Tue, 15 Jul 2026 16:30:00 +0500</pubDate>
+      <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleCollegiate/collegiate_setup.exe"
+                 sparkle:version="4.1.0+41"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
