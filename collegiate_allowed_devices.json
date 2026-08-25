@@ -13,8 +13,8 @@
     "577F5D11-D77C-4524-B579-C7CD3D566E53":{
       "label": "Developer PC",
       "role": "admin",
-      "restrictedModules": ["teachers", "students"],
-      "restrictionMode": "hide"
+      "restrictedModules": ["teachers", "students", "ai_assistant"],
+      "restrictionMode": "lock"
     }
   },
   "announcement": {
@@ -28,7 +28,7 @@
   },
   "support": {
     "active": true,
-    "whatsapp": "+923001234567",
+    "whatsapp": "+923447351186",
     "message": "Hi, I need technical support with Collegiate Schools System."
   }
 }
