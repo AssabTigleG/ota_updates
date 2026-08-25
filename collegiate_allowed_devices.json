@@ -9,13 +9,6 @@
     "registrationNo": "REG-2026-991",
     "principalName": "Prof. Hameed Khan"
   },
-  "devices": {
-    "C07C59B6-DEBD-4723-86EA-A0A2A7259FD1": {
-      "label": "Developer PC",
-      "role": "admin",
-      "restrictedModules": ["ai_assistant", "operations"],
-      "restrictionMode": "hide"
-    },
     "577F5D11-D77C-4524-B579-C7CD3D566E53": {
       "label": "Accountant PC",
       "role": "accountant",
