@@ -19,9 +19,7 @@
     "577F5D11-D77C-4524-B579-C7CD3D566E53": {
       "label": "Accountant PC",
       "role": "accountant",
-      "restrictedModules": [
-        
-      ],
+      "restrictedModules": [],
       "restrictionMode": "lock"
     }
   },
