@@ -10,12 +10,7 @@
     "principalName": "Prof. Hameed Khan"
   },
   "devices": {
-    "577F5D11-D77C-4524-B579-C7CD3D566E53":{
-      "label": "Developer PC",
-      "role": "admin",
-      "restrictedModules": ["teachers", "students", "ai_assistant"],
-      "restrictionMode": "lock"
-    }
+    
   },
   "announcement": {
     "active": true,
