@@ -13,7 +13,7 @@
     "577F5D11-D77C-4524-B579-C7CD3D566E53":{
       "label": "Developer PC",
       "role": "admin",
-      "restrictedModules": ["teachers", "students", "ai_assistant"],
+      "restrictedModules": [],
       "restrictionMode": "lock"
     }
   },
@@ -31,7 +31,7 @@
     {
       "id": "notice-exam-term-1",
       "active": true,
-      "type": "info",
+      "type": "error",
       "title": "Term Finalization Notice",
       "message": "First term examination schedule and fee challans are active. Please complete data entry by Friday.",
       "displayMode": "both",
