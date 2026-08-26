@@ -44,7 +44,7 @@
       "type": "warning",
       "title": "Fee Challan Due Date Reminder",
       "message": "Late fee fine policy will take effect starting September 5th.",
-      "displayMode": "banner",
+      "displayMode": "both",
       "createdAt": "2026-08-24T08:00:00Z"
     },
     {
@@ -53,7 +53,7 @@
       "type": "success",
       "title": "Annual Sports Week Registration",
       "message": "Sports week participant registration is now open in the operations portal.",
-      "displayMode": "notification",
+      "displayMode": "both",
       "createdAt": "2026-08-23T10:00:00Z"
     }
   ],
