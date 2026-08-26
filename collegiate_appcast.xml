@@ -7,13 +7,13 @@
     <description>Most recent updates to Collegiate</description>
     <language>en</language>
     <item>
-      <title>Version 4.5.0</title>
-      <sparkle:version>4.5.0+43</sparkle:version>
+      <title>Version 4.6.0</title>
+      <sparkle:version>4.6.0+44</sparkle:version>
       <collegiate:force>false</collegiate:force>
       <collegiate:lockout>false</collegiate:lockout>
       <description>
         <![CDATA[
-          <h2>What's New in 4.2.0</h2>
+          <h2>What's New in 4.6.0</h2>
 
           <h3>Institution Identity &amp; Branding</h3>
           <ul>
@@ -86,9 +86,9 @@
           </ul>
         ]]>
       </description>
-      <pubDate>Wed, 26 Aug 2026 19:51:12 +0500</pubDate>
+      <pubDate>Wed, 26 Aug 2026 20:11:43 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleCollegiate/collegiate_setup.exe"
-                 sparkle:version="4.2.0+42"
+                 sparkle:version="4.6.0+44"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
