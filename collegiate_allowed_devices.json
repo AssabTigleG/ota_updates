@@ -17,15 +17,36 @@
       "restrictionMode": "lock"
     }
   },
-  "announcement": {
-    "active": true,
-    "id": "announcement-2026-08-25",
-    "type": "info",
-    "title": "Term Finalization Notice",
-    "message": "First term examination schedule and fee challans are active. Please complete data entry by Friday.",
-    "displayMode": "both",
-    "expiresAt": "2026-09-01T00:00:00Z"
-  },
+  "announcements": [
+    {
+      "id": "notice-exam-term-1",
+      "active": true,
+      "type": "info",
+      "title": "Term Finalization Notice",
+      "message": "First term examination schedule and fee challans are active. Please complete data entry by Friday.",
+      "displayMode": "both",
+      "createdAt": "2026-08-25T12:00:00Z",
+      "expiresAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "id": "notice-fee-due",
+      "active": true,
+      "type": "warning",
+      "title": "Fee Challan Due Date Reminder",
+      "message": "Late fee fine policy will take effect starting September 5th.",
+      "displayMode": "banner",
+      "createdAt": "2026-08-24T08:00:00Z"
+    },
+    {
+      "id": "notice-sports-gala",
+      "active": true,
+      "type": "success",
+      "title": "Annual Sports Week Registration",
+      "message": "Sports week participant registration is now open in the operations portal.",
+      "displayMode": "notification",
+      "createdAt": "2026-08-23T10:00:00Z"
+    }
+  ],
   "support": {
     "active": true,
     "whatsapp": "+923447351186",
