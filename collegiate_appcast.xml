@@ -7,50 +7,86 @@
     <description>Most recent updates to Collegiate</description>
     <language>en</language>
     <item>
-      <title>Version 4.2.0</title>
-      <sparkle:version>4.2.0+42</sparkle:version>
-      <collegiate:force>true</collegiate:force>
-      <collegiate:lockout>true</collegiate:lockout>
+      <title>Version 4.5.0</title>
+      <sparkle:version>4.5.0+43</sparkle:version>
+      <collegiate:force>false</collegiate:force>
+      <collegiate:lockout>false</collegiate:lockout>
       <description>
         <![CDATA[
           <h2>What's New in 4.2.0</h2>
 
-          <h3>PDF &amp; CSV Exports</h3>
+          <h3>Institution Identity &amp; Branding</h3>
           <ul>
-            <li>Branded PDF exports for payroll, fees, attendance, exam reports, and analytics.</li>
-            <li>CSV export with native file-save dialogs.</li>
-            <li>Audit history PDF export with date-range filtering.</li>
+            <li>Updated full official institution name to <strong>Collegiate Schools System</strong> across the entire application and dashboard.</li>
+            <li>Added authentic School Crest Logo to Window Title Bar, Dashboard, Navigation Sidebar, and all exported PDF documents.</li>
           </ul>
 
-          <h3>Date Sheet / Exam Schedule</h3>
+          <h3>Executive Dashboard</h3>
           <ul>
-            <li>Full redesign with Tigle UI components.</li>
-            <li>Time column per exam slot with start and end times.</li>
-            <li>Generate PDF date sheet grouped by classroom.</li>
+            <li>Real-time KPI metrics: Paid Students, Total Defaulters, 100% Free Students, and Struck-Off / Withdrawn Students.</li>
+            <li>1-Click Printable Fee Defaulters sheet directly from Dashboard.</li>
+            <li>Quick Fee Entry form and instant Student Search bar.</li>
           </ul>
 
-          <h3>Class Timetable</h3>
+          <h3>Student Admission, Concessions &amp; Safety</h3>
           <ul>
-            <li>New timetable builder with configurable days and time slots.</li>
-            <li>Tap-to-assign subjects to time-slot cells.</li>
-            <li>Teacher viewer with conflict detection across classrooms.</li>
-            <li>Branded PDF export with teacher filter.</li>
-            <li>Demo data seeder with sample timetables and conflicts.</li>
+            <li>Student Profile photo upload and directory integration.</li>
+            <li>Free Student flag with categorized reasons (Siblings, Orphan, Poor, Merit Scholarship, Teacher Child).</li>
+            <li>Flexible Fee Concessions (percentage and fixed amounts) with automated line-item calculation.</li>
+            <li>Duplicate payment protection and overpayment prevention with payment reversal handling.</li>
+            <li>Class promotion and session rollover support with automated data backups.</li>
           </ul>
 
-          <h3>Exam Enhancements</h3>
+          <h3>School Transport Management</h3>
           <ul>
-            <li>Added time selection (start and end time) to exam setup.</li>
+            <li>New dedicated Transport Hub for vehicle and driver management.</li>
+            <li>Driver directory with direct contact phone numbers, vehicle registration, and seating capacity.</li>
+            <li>Student passenger manifests linking students to assigned vehicles and route stops.</li>
+            <li>Automated transport fee billing integration.</li>
           </ul>
 
-          <h3>Navigation Updates</h3>
+          <h3>Attendance &amp; Staff Payroll</h3>
           <ul>
-            <li>Timetable moved under Academics sidebar item.</li>
-            <li>Timetable and Date Sheet added to Campus Management hub.</li>
+            <li>Default-present marking for streamlined daily Student and Teacher attendance logging.</li>
+            <li>Staff Payroll Dashboard: Total Salary, Total Paid, Remaining Balance, and Paid vs. Remaining staff counts.</li>
+            <li>Branded multi-period salary slips and printable salary sheets.</li>
+          </ul>
+
+          <h3>Finance &amp; Accounts Ledger</h3>
+          <ul>
+            <li>Customizable Income and Expense accounts with user-defined categories.</li>
+            <li>Multi-period financial tracking: Daily, Weekly, Monthly, Yearly, and Custom Date Ranges.</li>
+          </ul>
+
+          <h3>Certificates Hub</h3>
+          <ul>
+            <li>School Leaving Certificates (SLC) with sequential serial generation.</li>
+            <li>Sports &amp; Extracurricular Achievement Certificates.</li>
+            <li>Teacher Experience Certificates.</li>
+            <li>Student Character, Birth, and Bonafide Certificates.</li>
+            <li>Authentic PDF layout with official seal boxes, signature lines, and school crest.</li>
+          </ul>
+
+          <h3>Reports Center</h3>
+          <ul>
+            <li>Class-wise Student Record Master Register (Admission #, Name, Father Name, Contact, Fee/Free status).</li>
+            <li>100% Free Students Register and Concession Breakdown Report.</li>
+            <li>Transport Manifests (Vehicle, Driver Name/Phone, Student &amp; Parent contacts).</li>
+            <li>Overall Fee Defaulters and Sibling-wise Defaulters Reports.</li>
+            <li>Struck-Off / Withdrawn Students List and SLC Issued Register.</li>
+            <li>Advance Fee Payment Tracking Report.</li>
+          </ul>
+
+          <h3>Exam Management &amp; Academics</h3>
+          <ul>
+            <li>Subject Award Lists with automated pass/fail grading.</li>
+            <li>Class Position adjustments with monotonic rank sorting across all views.</li>
+            <li>Class-wise automated Detailed Marks Certificates (DMC) bulk generation.</li>
+            <li>Classroom-grouped Date Sheets and schedules.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Tue, 25 Aug 2026 16:30:00 +0500</pubDate>
+      <pubDate>Wed, 26 Aug 2026 19:51:12 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleCollegiate/collegiate_setup.exe"
                  sparkle:version="4.2.0+42"
                  sparkle:os="windows"
