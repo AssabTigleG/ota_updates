@@ -19,6 +19,16 @@
   },
   "announcements": [
     {
+      "id": "notice-exam-term-2",
+      "active": true,
+      "type": "info",
+      "title": "Term Finalization Notice BIG",
+      "message": "First term examination schedule and fee challans are active. Please complete data entry by Friday.",
+      "displayMode": "both",
+      "createdAt": "2026-09-25T12:00:00Z",
+      "expiresAt": "2026-10-01T00:00:00Z"
+    },
+    {
       "id": "notice-exam-term-1",
       "active": true,
       "type": "info",
