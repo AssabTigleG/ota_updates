@@ -10,17 +10,19 @@
     "principalName": "Prof. Hameed Khan"
   },
   "devices": {
-    "577F5D11-D77C-4524-B579-C7CD3D566E53":{
+    "577F5D11-D77C-4524-B579-C7CD3D566E53": {
       "label": "Developer PC",
       "role": "admin",
       "restrictedModules": [],
-      "restrictionMode": "lock"
+      "restrictionMode": "lock",
+      "allowDemoSeeding": false
     },
-    "8E3D31AD-5A79-4054-B2D5-780A6C89D820":{
+    "8E3D31AD-5A79-4054-B2D5-780A6C89D820": {
       "label": "Accountant",
       "role": "admin",
       "restrictedModules": [],
-      "restrictionMode": "lock"
+      "restrictionMode": "lock",
+      "allowDemoSeeding": false
     }
   },
   "announcements": [
