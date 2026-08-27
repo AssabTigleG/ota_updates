@@ -4,9 +4,9 @@
     "name": "Collegiate Schools System",
     "branch": "Main Campus",
     "phone": "+92 344 7351186",
-    "email": "info@collegiate.edu.pk",
-    "address": "Sector 4, Main Boulevard",
-    "registrationNo": "REG-2026-991",
+    "email": "assabtigle@gmail.com",
+    "address": "Totakan",
+    "registrationNo": "REG-2026-001",
     "principalName": "Prof. Hameed Khan"
   },
   "devices": {
@@ -19,42 +19,14 @@
   },
   "announcements": [
     {
-      "id": "notice-exam-term-2",
+      "id": "app-release",
       "active": true,
       "type": "info",
-      "title": "Term Finalization Notice BIG",
-      "message": "First term examination schedule and fee challans are active. Please complete data entry by Friday.",
-      "displayMode": "both",
-      "createdAt": "2026-09-25T12:00:00Z",
-      "expiresAt": "2026-10-01T00:00:00Z"
-    },
-    {
-      "id": "notice-exam-term-1",
-      "active": true,
-      "type": "error",
-      "title": "Term Finalization Notice",
-      "message": "First term examination schedule and fee challans are active. Please complete data entry by Friday.",
+      "title": "Full Production Release",
+      "message": "Software has been completed and all requirements are met.",
       "displayMode": "both",
       "createdAt": "2026-08-25T12:00:00Z",
-      "expiresAt": "2026-09-01T00:00:00Z"
-    },
-    {
-      "id": "notice-fee-due",
-      "active": true,
-      "type": "warning",
-      "title": "Fee Challan Due Date Reminder",
-      "message": "Late fee fine policy will take effect starting September 5th.",
-      "displayMode": "both",
-      "createdAt": "2026-08-24T08:00:00Z"
-    },
-    {
-      "id": "notice-sports-gala",
-      "active": true,
-      "type": "success",
-      "title": "Annual Sports Week Registration",
-      "message": "Sports week participant registration is now open in the operations portal.",
-      "displayMode": "both",
-      "createdAt": "2026-08-23T10:00:00Z"
+      "expiresAt": "2026-10-01T00:00:00Z"
     }
   ],
   "support": {
