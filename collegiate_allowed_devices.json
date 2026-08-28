@@ -15,7 +15,7 @@
       "role": "admin",
       "restrictedModules": [],
       "restrictionMode": "lock",
-      "allowDemoSeeding": false
+      "allowDemoSeeding": true
     },
     "8E3D31AD-5A79-4054-B2D5-780A6C89D820": {
       "label": "Accountant",
