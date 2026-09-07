@@ -24,6 +24,13 @@
       "restrictionMode": "lock",
       "allowDemoSeeding": true
     },
+    "293B3FF6-932E-468A-AB0E-D45D6D7F58DA": {
+      "label": "Hameed Saib",
+      "role": "admin",
+      "restrictedModules": [],
+      "restrictionMode": "lock",
+      "allowDemoSeeding": true
+    },
     "8E3D31AD-5A79-4054-B2D5-780A6C89D820": {
       "label": "Accountant",
       "role": "admin",
