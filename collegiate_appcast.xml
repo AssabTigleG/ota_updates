@@ -7,88 +7,57 @@
     <description>Most recent updates to Collegiate</description>
     <language>en</language>
     <item>
-      <title>Version 5.3.0</title>
-      <sparkle:version>5.3.0+48</sparkle:version>
+      <title>Version 5.4.0</title>
+      <sparkle:version>5.4.0+49</sparkle:version>
       <collegiate:force>false</collegiate:force>
       <collegiate:lockout>false</collegiate:lockout>
       <description>
         <![CDATA[
-          <h2>What's New in 5.3.0</h2>
+          <h2>What's New in 5.4.0</h2>
 
-          <h3>Institution Identity &amp; Branding</h3>
+          <h3>Teacher 360Â° Executive Dossier</h3>
           <ul>
-            <li>Updated full official institution name to <strong>Collegiate Schools System</strong> across the entire application and dashboard.</li>
-            <li>Added authentic School Crest Logo to Window Title Bar, Dashboard, Navigation Sidebar, and all exported PDF documents.</li>
+            <li>Full interactive faculty profile dialog with teaching allocations, weekly timetable, attendance log, payroll slips, quality walkthrough reviews, and issued certificates.</li>
+            <li>1-Click actions for direct salary collection and quick profile editing.</li>
+            <li>Unified responsive TabBar geometry, typography, and divider styling matching the Student Dossier.</li>
           </ul>
 
-          <h3>Executive Dashboard</h3>
+          <h3>Dashboard Omni-Search &amp; Floating Quick Dossier</h3>
           <ul>
-            <li>Real-time KPI metrics: Paid Students, Total Defaulters, 100% Free Students, and Struck-Off / Withdrawn Students.</li>
-            <li>1-Click Printable Fee Defaulters sheet directly from Dashboard.</li>
-            <li>Quick Fee Entry form and instant Student Search bar.</li>
+            <li>Unified app bar search with instant multi-category filtering across <strong>ALL</strong>, <strong>STUDENTS</strong>, and <strong>STAFF</strong>.</li>
+            <li>Timer-less overlay focus stability ensuring the results menu remains mounted during press/hold, scrolling, and category switching.</li>
+            <li>Translucent backdrop barrier for responsive outside click dismissal.</li>
           </ul>
 
-          <h3>Student Admission, Concessions &amp; Safety</h3>
+          <h3>Student Promotion &amp; Session Rollover Subsystem</h3>
           <ul>
-            <li>Student Profile photo upload and directory integration.</li>
-            <li>Free Student flag with categorized reasons (Siblings, Orphan, Poor, Merit Scholarship, Teacher Child).</li>
-            <li>Flexible Fee Concessions (percentage and fixed amounts) with automated line-item calculation.</li>
-            <li>Duplicate payment protection and overpayment prevention with payment reversal handling.</li>
-            <li>Class promotion and session rollover support with automated data backups.</li>
+            <li>3-Step interactive class promotion wizard with bulk pass selection, automatic roll number re-ranking, and new fee previews.</li>
+            <li>Whole-school progression matrix and immutable audit history ledger.</li>
+            <li>1-Click atomic batch rollback restoring prior classroom, roll numbers, fees, and transport assignments.</li>
+            <li>Cascading double-promotion guard and sibling concession rollover.</li>
+            <li>Terminal class graduation into archived alumni cohort batches.</li>
           </ul>
 
-          <h3>School Transport Management</h3>
+          <h3>Collegiate AI Assistant Tools &amp; Generative UI</h3>
           <ul>
-            <li>New dedicated Transport Hub for vehicle and driver management.</li>
-            <li>Driver directory with direct contact phone numbers, vehicle registration, and seating capacity.</li>
-            <li>Student passenger manifests linking students to assigned vehicles and route stops.</li>
-            <li>Automated transport fee billing integration.</li>
+            <li>Domain AI tools: cash flow queries, expense/income recording, transport fleet assignment, and multi-signal at-risk student triage.</li>
+            <li>Staged write proposals requiring explicit user confirmation before executing changes.</li>
+            <li>Generative UI deep-link action pills and inline 1-click PDF download cards.</li>
           </ul>
 
-          <h3>Attendance &amp; Staff Payroll</h3>
+          <h3>Data Integrity &amp; Performance Optimizations</h3>
           <ul>
-            <li>Default-present marking for streamlined daily Student and Teacher attendance logging.</li>
-            <li>Staff Payroll Dashboard: Total Salary, Total Paid, Remaining Balance, and Paid vs. Remaining staff counts.</li>
-            <li>Branded multi-period salary slips and printable salary sheets.</li>
-          </ul>
-
-          <h3>Finance &amp; Accounts Ledger</h3>
-          <ul>
-            <li>Customizable Income and Expense accounts with user-defined categories.</li>
-            <li>Multi-period financial tracking: Daily, Weekly, Monthly, Yearly, and Custom Date Ranges.</li>
-          </ul>
-
-          <h3>Certificates Hub</h3>
-          <ul>
-            <li>School Leaving Certificates (SLC) with sequential serial generation.</li>
-            <li>Sports &amp; Extracurricular Achievement Certificates.</li>
-            <li>Teacher Experience Certificates.</li>
-            <li>Student Character, Birth, and Bonafide Certificates.</li>
-            <li>Authentic PDF layout with official seal boxes, signature lines, and school crest.</li>
-          </ul>
-
-          <h3>Reports Center</h3>
-          <ul>
-            <li>Class-wise Student Record Master Register (Admission #, Name, Father Name, Contact, Fee/Free status).</li>
-            <li>100% Free Students Register and Concession Breakdown Report.</li>
-            <li>Transport Manifests (Vehicle, Driver Name/Phone, Student &amp; Parent contacts).</li>
-            <li>Overall Fee Defaulters and Sibling-wise Defaulters Reports.</li>
-            <li>Struck-Off / Withdrawn Students List and SLC Issued Register.</li>
-            <li>Advance Fee Payment Tracking Report.</li>
-          </ul>
-
-          <h3>Exam Management &amp; Academics</h3>
-          <ul>
-            <li>Subject Award Lists with automated pass/fail grading.</li>
-            <li>Class Position adjustments with monotonic rank sorting across all views.</li>
-            <li>Class-wise automated Detailed Marks Certificates (DMC) bulk generation.</li>
-            <li>Classroom-grouped Date Sheets and schedules.</li>
+            <li>Guaranteed Isar link eager-loading and safe unlinking across school structure and subject allocations.</li>
+            <li>Cascade cleanup of orphan records on classroom and subject deletions.</li>
+            <li>Background isolate PDF compilation (runPdfIsolate) preventing UI freezes during heavy export generation.</li>
+            <li>Multi-filter fee and payroll ledgers allowing simultaneous Class, Billing Month, and Status filtering.</li>
+            <li>Normalized date range interval boundaries to 23:59:59.999 preventing next-month transaction leakage.</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Mon, 07 Sep 2026 07:49:30 +0500</pubDate>
+      <pubDate>Wed, 07 Oct 2026 19:23:17 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleCollegiate/collegiate_setup.exe"
-                 sparkle:version="5.3.0+48"
+                 sparkle:version="5.4.0+49"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
