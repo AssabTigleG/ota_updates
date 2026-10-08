@@ -9,11 +9,113 @@
     "registrationNo": "REG-2026-001",
     "principalName": "Prof. Hameed Khan"
   },
+
+  "support": {
+    "active": true,
+    "whatsapp": "+923447351186",
+    "message": "Hi, I need technical support with Collegiate Schools System."
+  },
+
+  "announcements": [
+    {
+      "id": "app-release",
+      "active": true,
+      "type": "info",
+      "title": "Full Production Release",
+      "message": "Software has been completed and all requirements are met.",
+      "displayMode": "both",
+      "createdAt": "2026-08-25T12:00:00Z",
+      "expiresAt": "2026-10-01T00:00:00Z"
+    },
+    {
+      "id": "ANN-2026-TERM2-EXAMS",
+      "active": true,
+      "type": "info",
+      "title": "Mid-Term Examination Schedule Published",
+      "message": "The revised Mid-Term assessment date sheet and hall allocations for Grade 1 through 10 have been finalized. Please verify room plans in Academic Schedule.",
+      "displayMode": "banner",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "expiresAt": "2026-10-31T23:59:59.999Z"
+    },
+    {
+      "id": "ANN-2026-FEE-DEADLINE",
+      "active": true,
+      "type": "warning",
+      "title": "Monthly Fee Challan Clearance Deadline",
+      "message": "Challan due dates for October 2026 expire on 10th October. Uncollected accounts will transition to Defaulter status with late fines enabled.",
+      "displayMode": "both",
+      "createdAt": "2026-10-05T09:00:00.000Z",
+      "expiresAt": "2026-10-15T23:59:59.999Z"
+    },
+    {
+      "id": "ANN-2026-MAINTENANCE-CRITICAL",
+      "active": false,
+      "type": "danger",
+      "title": "Scheduled Server Synchronization Window",
+      "message": "Cloud backup synchronizer will run maintenance tonight at 11:00 PM. Please ensure local offline backups are generated before closing.",
+      "displayMode": "popup",
+      "createdAt": "2026-10-08T12:00:00.000Z",
+      "expiresAt": "2026-10-09T04:00:00.000Z"
+    }
+  ],
+  
   "devices": {
     "577F5D11-D77C-4524-B579-C7CD3D566E53": {
       "label": "Developer PC",
       "role": "admin",
-      "restrictedModules": [],
+      "restrictedModules": [
+      "export.pdf",
+      "export.csv",
+      "ai.assistant",
+      "actions.reversals",
+      "actions.deletions",
+      
+      "settings.profile",
+      "settings.appearance",
+      "settings.security",
+      "settings.backup_restore",
+      "settings.developer_tools",
+      
+      "reviews.notebook",
+      "reviews.classroom",
+      "reviews.parent",
+      "reviews.portfolio",
+      "reviews.engagement",
+      "reviews.checkpoint",
+      "reviews.history",
+      "reviews.analytics",
+      
+      "exams.planner",
+      "exams.date_sheet",
+      "exams.marks_entry",
+      "exams.analytics",
+      "exams.dmc_cards",
+      "exams.tabulation",
+      
+      "operations.transport",
+      "operations.certificates",
+      "operations.reports",
+      
+      "students.admissions",
+      "students.dossier",
+      "students.attendance",
+      "students.promotion",
+      "students.archived",
+      
+      "teachers.admissions",
+      "teachers.attendance",
+      "teachers.analytics",
+      
+      "academics.subjects",
+      "academics.planning",
+      "academics.schedule",
+      "academics.structure",
+      "academics.timetable",
+      
+      "finance.cash_flow",
+      "finance.fees",
+      "finance.payroll"
+      ],
       "restrictionMode": "lock",
       "allowDemoSeeding": true
     },
@@ -38,22 +140,5 @@
       "restrictionMode": "lock",
       "allowDemoSeeding": false
     }
-  },
-  "announcements": [
-    {
-      "id": "app-release",
-      "active": true,
-      "type": "info",
-      "title": "Full Production Release",
-      "message": "Software has been completed and all requirements are met.",
-      "displayMode": "both",
-      "createdAt": "2026-08-25T12:00:00Z",
-      "expiresAt": "2026-10-01T00:00:00Z"
-    }
-  ],
-  "support": {
-    "active": true,
-    "whatsapp": "+923447351186",
-    "message": "Hi, I need technical support with Collegiate Schools System."
   }
 }
