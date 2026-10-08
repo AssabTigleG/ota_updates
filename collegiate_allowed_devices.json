@@ -74,6 +74,7 @@
       "settings.appearance",
       "settings.security",
       "settings.backup_restore",
+      "settings.support",
       "settings.developer_tools",
       
       "reviews.notebook",
