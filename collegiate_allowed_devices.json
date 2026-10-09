@@ -113,7 +113,7 @@
       "finance.fees",
       "finance.payroll"
       ],
-      "restrictionMode": "lock",
+      "restrictionMode": "hide",
       "allowDemoSeeding": true
     },
     "DC9C058E-6463-49E4-A434-D856AE4718DF": {
