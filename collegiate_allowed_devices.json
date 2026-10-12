@@ -64,52 +64,6 @@
       "label": "Developer PC",
       "role": "admin",
       "restrictedModules": [
-      "export.pdf",
-      "export.csv",
-      "ai.assistant",
-      "actions.reversals",
-      "actions.deletions",
-      
-      "settings.profile",
-      "settings.appearance",
-      "settings.security",
-      "settings.backup_restore",
-      "settings.support",
-      "settings.developer_tools",
-      
-      "reviews.parent",
-      "reviews.portfolio",
-      "reviews.engagement",
-      "reviews.checkpoint",
-      
-      "exams.planner",
-      "exams.date_sheet",
-      "exams.marks_entry",
-      "exams.analytics",
-      "exams.dmc_cards",
-      "exams.tabulation",
-      
-      "operations.transport",
-      "operations.certificates",
-      "operations.reports",
-      
-      "students.admissions",
-      "students.dossier",
-      "students.attendance",
-      "students.promotion",
-      "students.archived",
-      
-      "teachers.attendance",
-      "teachers.analytics",
-      
-      "academics.subjects",
-      "academics.planning",
-      "academics.schedule",
-      "academics.structure",
-      
-      "finance.cash_flow",
-      "finance.fees",
-      "finance.payroll"
       ],
       "restrictionMode": "hide",
       "allowDemoSeeding": true
