@@ -21,7 +21,7 @@
       "role": "admin",
       "restrictedModules": [],
       "restrictionMode": "hide",
-      "allowDemoSeeding": true
+      "allowDemoSeeding": false
     },
     "DC9C058E-6463-49E4-A434-D856AE4718DF": {
       "label": "Developer Laptop",
