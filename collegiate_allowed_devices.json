@@ -88,13 +88,6 @@
       "restrictedModules": [],
       "restrictionMode": "lock",
       "allowDemoSeeding": false
-    },
-    "DE69A0C0-F226-4A69-A2A9-6D5262B9E200": {
-      "label": "Client Laptop",
-      "role": "admin",
-      "restrictedModules": [],
-      "restrictionMode": "lock",
-      "allowDemoSeeding": false
     }
   }
 }
