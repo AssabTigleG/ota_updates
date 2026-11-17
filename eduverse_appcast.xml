@@ -5,13 +5,13 @@
     <description>Most recent updates to Eduverse</description>
     <language>en</language>
     <item>
-      <title>Version 1.9.6</title>
-      <sparkle:version>1.9.6+32</sparkle:version>
+      <title>Version 1.9.7</title>
+      <sparkle:version>1.9.7+50</sparkle:version>
       <eduverse:force>false</eduverse:force>
       <eduverse:lockout>false</eduverse:lockout>
       <description>
         <![CDATA[
-          <h2>What's New in 1.9.6</h2>
+          <h2>What's New in 1.9.7</h2>
 
           <h3>Parametric Review Tracking Sheets</h3>
           <ul>
@@ -29,7 +29,7 @@
 
           <h3>Checklist Interactivity & Autosaving</h3>
           <ul>
-            <li><strong>Three-State Cycling Status:</strong> The ✓ or ✕ verification column now cycles dynamically on click (unmarked -> ✓ Met -> ✕ Action Needed -> unmarked) with soft green and red visual highlight indicators.</li>
+            <li><strong>Three-State Cycling Status:</strong> The Ã¢Å“â€œ or Ã¢Å“â€¢ verification column now cycles dynamically on click (unmarked -> Ã¢Å“â€œ Met -> Ã¢Å“â€¢ Action Needed -> unmarked) with soft green and red visual highlight indicators.</li>
             <li><strong>Seamless Remarks Modal:</strong> Tapping the remarks column launches a localized editor sheet, preventing layout overflow bugs and popping safely without interrupting the primary grid detail view.</li>
             <li><strong>Background Persistence:</strong> Any edits to checkboxes or remarks automatically write and save to the local Isar database instantly with zero lag.</li>
           </ul>
@@ -54,9 +54,9 @@
           </ul>
         ]]>
       </description>
-      <pubDate>Sun, 07 Jun 2026 16:30:00 +0500</pubDate>
+      <pubDate>Tue, 17 Nov 2026 18:54:54 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
-                 sparkle:version="1.9.6+32"
+                 sparkle:version="1.9.7+50"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
