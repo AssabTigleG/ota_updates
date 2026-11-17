@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "schoolProfile": {
+    "name": "Eduverse Academy",
+    "branch": "Main Campus",
+    "phone": "+92 344 7351186",
+    "email": "assabtigle@gmail.com",
+    "address": "Totakan",
+    "registrationNo": "REG-2026-001",
+    "principalName": "Principal"
+  },
+  "support": {
+    "active": true,
+    "whatsapp": "+923447351186",
+    "message": "Hi, I need technical support with Eduverse Academy."
+  },
+  "announcements": [],
+  "devices": {
+    "577F5D11-D77C-4524-B579-C7CD3D566E53": {
+      "label": "Developer PC",
+      "role": "admin",
+      "restrictedModules": [],
+      "restrictionMode": "hide",
+      "allowDemoSeeding": true
+    },
+    "DC9C058E-6463-49E4-A434-D856AE4718DF": {
+      "label": "Developer Laptop",
+      "role": "admin",
+      "restrictedModules": [],
+      "restrictionMode": "lock",
+      "allowDemoSeeding": true
+    }
+  }
+}
