@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Eduverse Changelog</title>
+    <description>Most recent updates to Eduverse</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.9.6</title>
+      <sparkle:version>1.9.6+32</sparkle:version>
+      <eduverse:force>false</eduverse:force>
+      <eduverse:lockout>false</eduverse:lockout>
+      <description>
+        <![CDATA[
+          <h2>What's New in 1.9.6</h2>
+
+          <h3>Parametric Review Tracking Sheets</h3>
+          <ul>
+            <li><strong>Randomized Tracking Calendars:</strong> Introduced fully randomized, configurable tracking sheets that match your physical printed schedule layouts.</li>
+            <li><strong>Flexible Generation Configurations:</strong> Added a setup panel allowing users to configure custom parameters for Total Days, Class Ranges per row, Subject Ranges per row, and Student counts.</li>
+            <li><strong>Intelligent Scheduling Toggles:</strong> Integrated optional support for Union ("Any Subject") vs. Intersection ("Common Subjects Only") and a "Strict Deduplication" filter to prevent back-to-back repeats of classrooms, subjects, and students.</li>
+          </ul>
+
+          <h3>Interactive Spreadsheet & Data Grid</h3>
+          <ul>
+            <li><strong>TigleDataGrid Molecule:</strong> Engineered a generic, highly reusable, responsive spreadsheet layout component that dynamically stretches to fill wide desktop screens while preserving scroll bounds on smaller resolutions.</li>
+            <li><strong>Pill-Shaped Cohort Lists:</strong> Student roll selections are parsed dynamically to render as elegant, color-coded visual pills instead of raw comma-separated lists.</li>
+            <li><strong>Vertical Multi-Class Alignment:</strong> Handled multi-class days by stacking class rows vertically with thin, subtle grid dividers to align classrooms directly with their randomized student pools.</li>
+          </ul>
+
+          <h3>Checklist Interactivity & Autosaving</h3>
+          <ul>
+            <li><strong>Three-State Cycling Status:</strong> The ✓ or ✕ verification column now cycles dynamically on click (unmarked -> ✓ Met -> ✕ Action Needed -> unmarked) with soft green and red visual highlight indicators.</li>
+            <li><strong>Seamless Remarks Modal:</strong> Tapping the remarks column launches a localized editor sheet, preventing layout overflow bugs and popping safely without interrupting the primary grid detail view.</li>
+            <li><strong>Background Persistence:</strong> Any edits to checkboxes or remarks automatically write and save to the local Isar database instantly with zero lag.</li>
+          </ul>
+
+          <h3>Student Directory & Mandatory Roll Numbers</h3>
+          <ul>
+            <li><strong>Required Class Roll Numbers:</strong> Added a mandatory, indexed <code>rollNo</code> field inside the student collection schema.</li>
+            <li><strong>Validation Safety:</strong> Updated the student admission form to enforce unique roll numbers within the target classroom, preventing data entry errors.</li>
+            <li><strong>Index Optimization:</strong> Fixed a critical database schema issue by migrating optional ID and Admission number fields to standard indexes, completely resolving multiple-null unique index violations.</li>
+          </ul>
+
+          <h3>Onboarding Utilities & Demo Data Generator</h3>
+          <ul>
+            <li><strong>Settings Utility Center:</strong> Integrated a "Developer & Onboarding Utilities" panel inside Settings.</li>
+            <li><strong>Wipe vs. Append Modes:</strong> Supports both a destructive "Fresh Reset & Load" database wipe and a non-destructive "Merge & Append" to easily populate demo structures.</li>
+            <li><strong>Dynamic Active Year Mapping:</strong> Generated datasets dynamically bind to the user's current system year, ensuring academic plans and scrollers are immediately marked **Active** instead of "Upcoming" or "Dates TBA".</li>
+          </ul>
+
+          <h3>Performance & Database Layer Stability</h3>
+          <ul>
+            <li><strong>Async Transaction Separation:</strong> Refactored Isar link saving to run inside a separate, independent write transaction block after the main transaction closes, entirely resolving nesting conflicts (<code>IsarError: Isar does not support nesting transactions</code>).</li>
+          </ul>
+        ]]>
+      </description>
+      <pubDate>Sun, 07 Jun 2026 16:30:00 +0500</pubDate>
+      <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/Release/eduverse_setup.exe"
+                 sparkle:version="1.9.6+32"
+                 sparkle:os="windows"
+                 length="0"
+                 type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>
