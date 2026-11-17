@@ -7,15 +7,15 @@
     <description>Most recent updates to Collegiate</description>
     <language>en</language>
     <item>
-      <title>Version 5.4.0</title>
-      <sparkle:version>5.4.0+49</sparkle:version>
+      <title>Version 5.5.0</title>
+      <sparkle:version>5.5.0+50</sparkle:version>
       <collegiate:force>false</collegiate:force>
       <collegiate:lockout>false</collegiate:lockout>
       <description>
         <![CDATA[
-          <h2>What's New in 5.4.0</h2>
+          <h2>What's New in 5.5.0</h2>
 
-          <h3>Teacher 360Â° Executive Dossier</h3>
+          <h3>Teacher 360Ã‚Â° Executive Dossier</h3>
           <ul>
             <li>Full interactive faculty profile dialog with teaching allocations, weekly timetable, attendance log, payroll slips, quality walkthrough reviews, and issued certificates.</li>
             <li>1-Click actions for direct salary collection and quick profile editing.</li>
@@ -55,9 +55,9 @@
           </ul>
         ]]>
       </description>
-      <pubDate>Wed, 07 Oct 2026 19:23:17 +0500</pubDate>
+      <pubDate>Tue, 17 Nov 2026 19:58:15 +0500</pubDate>
       <enclosure url="https://github.com/AssabTigleG/ota_updates/releases/download/TigleCollegiate/collegiate_setup.exe"
-                 sparkle:version="5.4.0+49"
+                 sparkle:version="5.5.0+50"
                  sparkle:os="windows"
                  length="0"
                  type="application/octet-stream" />
